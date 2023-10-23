@@ -1,0 +1,31 @@
+@import "imports.scss";
+
+body {
+    font-family: "Jost", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5em;
+    color: #3b3b53;
+    background-color: $white;
+    height: 100%;
+}
+
+/* font-family: 'Bodoni Moda', serif; */
+/* font-family: 'Jost', sans-serif; */
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
