@@ -1,31 +1,233 @@
 @import "imports.scss";
 
+/* COMMON CSS */
 body {
     font-family: "Jost", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.5em;
-    color: #3b3b53;
-    background-color: $white;
+    background-color: $body-clr !important;
     height: 100%;
 }
-
-/* font-family: 'Bodoni Moda', serif; */
-/* font-family: 'Jost', sans-serif; */
 
 html {
     position: relative;
     min-height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Bodoni Moda", serif;
-    font-weight: 400;
-    line-height: 1.1em;
-    margin-bottom: 20px;
+/* BUTTON */
+.btns {
+    width: 130px;
+    height: 45px;
+    border: none;
+    background-color: $primary-clr;
+    color: $white-clr;
+    font-weight: 500;
+    font-family: "Jost", sans-serif;
+    transition: all 0.2s;
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $primary-clr;
+        color: $primary-clr;
+    }
 }
+
+/* FOOTER IMAGE GALLERY */
+.gallery-item {
+    padding: 0 !important;
+}
+
+.gallery-container {
+    padding: 5rem !important;
+}
+
+.gallery-image {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* POPUP */
+
+.gallery-popup {
+    opacity: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    overflow: hidden;
+    cursor: zoom-out;
+
+    &__arrows {
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+}
+
+.gallery-popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.popup-close {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+    justify-content: flex-end;
+    cursor: zoom-out;
+
+    &__svg {
+        opacity: 0;
+        cursor: zoom-out;
+        margin-bottom: 7.5px;
+        &:hover path {
+            fill: $primary-clr;
+        }
+        &:focus {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.popup-image-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.popup-left-arrow {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-right: 20px solid #ccc;
+    border-bottom: 12px solid transparent;
+}
+
+.popup-right-arrow {
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-left: 20px solid #ccc;
+    border-bottom: 12px solid transparent;
+}
+
+.popup-left-arrow:hover {
+    border-right: 20px solid #fff;
+}
+.popup.left-arrow:focus {
+    margin-top: 3px;
+}
+.popup-right-arrow:hover {
+    border-left: 20px solid #fff;
+}
+
+.popup-left {
+    left: 10px;
+}
+
+.popup-right {
+    right: 10px;
+}
+
+.index {
+    width: 70%;
+    margin: 0 auto;
+    text-align: right;
+    font-size: 12px;
+    font-family: "Jost", sans-serif;
+    color: #ccc;
+    font-weight: 500;
+    opacity: 0;
+    cursor: pointer;
+    padding-top: 5px;
+}
+.large-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0;
+    z-index: 20;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.gallery-popup.active .popup-close__svg,
+.gallery-popup.active .index,
+.gallery-popup.active .large-image,
+.gallery-popup.active .gallery-popup__arrows {
+    opacity: 1;
+}
+
+/* FOOTER */
+footer {
+    color: $paragraph-clr;
+    font-family: "Jost", sans-serif;
+}
+
+.footer-links-section {
+    margin-top: 1.25rem;
+    margin-bottom: 7rem;
+    h4,
+    h3 {
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+}
+.footer-paragraph {
+    padding-top: 0.5rem;
+}
+
+.footer-payment-image {
+    margin-top: 4.25rem;
+}
+.footer-navigation-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 1.25rem;
+    margin-bottom: 1.75rem;
+    li {
+        a {
+            text-decoration: none;
+            color: inherit;
+            &:hover {
+                color: $primary-clr;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.footer-help {
+    margin-bottom: 1.5rem;
+}
+.footer-phone {
+    margin-bottom: 1rem;
+}
+
+.footer-hours {
+    margin-top: 2rem;
+}
+
+/* Copyright */
+.copyright-section {
+    margin-bottom: 1rem;
+}
+
+.scroll-top {
+    width: 40px;
+    height: 40px;
+    background-color: $primary-clr;
+    padding-top: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+@import "media-query.scss";

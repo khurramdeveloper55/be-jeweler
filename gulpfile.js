@@ -74,7 +74,7 @@ function js() {
                 hideConsole: true,
             })
         )
-        .pipe(concat("all.js"))
+        .pipe(concat("script.js"))
         .pipe(gulpIf(isProd, uglify()))
         .pipe(gulp.dest("public/assets/js"));
 }

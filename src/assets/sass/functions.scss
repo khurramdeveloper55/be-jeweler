@@ -1,13 +1,13 @@
-@for $f-size from $fs-max through $fs-min {
+/* @for $f-size from $fs-max through $fs-min {
     .fs-#{$f-size} {
         font-size: #{$f-size}px;
     }
 
     @each $name, $breakpoint in $breakpoints {
-        @media(min-width: $breakpoint) {
-        .fs-#{$name}-#{$f-size} {
-            font-size: #{$f-size}px !important;
-        }
+        @media (min-width: $breakpoint) {
+            .fs-#{$name}-#{$f-size} {
+                font-size: #{$f-size}px !important;
+            }
         }
     }
 }
@@ -18,21 +18,21 @@
     }
 
     @each $name, $breakpoint in $breakpoints {
-        @media(min-width: $breakpoint) {
-        .lh-#{$name}-#{$l-size} {
-            line-height: #{$l-size}px !important;
-        }
+        @media (min-width: $breakpoint) {
+            .lh-#{$name}-#{$l-size} {
+                line-height: #{$l-size}px !important;
+            }
         }
     }
 }
 
 @for $top-position from 1 through 15 {
     .top-#{$top-position*10} {
-        top: #{$top-position*10}#{'%'} !important;
+        top: #{$top-position * 10}#{"%"} !important;
     }
-}
+} */
 
-$colours: "red" $red, "blue" $prim-blue, "brown" $prim-brown, "grey" $prim-grey,
+/* $colours: "red" $red, "blue" $prim-blue, "brown" $prim-brown, "grey" $prim-grey,
     "primary-beige" $prim-beige, "secondary-brown" $sec-brown,
     "secondary-grey" $sec-grey, "secondary-silver" $sec-dark-silver,
     "yellow" $yellow, "light-yellow" $light-yellow, "beige" $beige,
@@ -47,4 +47,4 @@ $colours: "red" $red, "blue" $prim-blue, "brown" $prim-brown, "grey" $prim-grey,
     .text-#{nth($i, 1)} {
         color: nth($i, 2) !important;
     }
-}
+} */

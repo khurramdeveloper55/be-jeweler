@@ -1,0 +1,21 @@
+/* Media Query */
+@media only screen and (max-width: 767px) {
+    .gallery-container {
+        padding: 2.5rem !important;
+    }
+    .t-md-center {
+        text-align: center;
+    }
+    .copyright-button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .popup-image-container,
+    .popup-close,
+    .index {
+        width: 90%;
+    }
+}
