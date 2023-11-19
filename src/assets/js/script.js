@@ -30,45 +30,36 @@ const togglePopup = () => {
     popup.classList.toggle("active");
 };
 
-const navigate = (direction) => {
-    if (direction === "left" && currentIndex > 0) {
+leftArrowElement.addEventListener("click", () => {
+    if (currentIndex > 0) {
         updateImage(currentIndex - 1);
-    } else if (direction === "left" && currentIndex === 0) {
+    } else if (currentIndex === 0) {
         updateImage(galleryImages.length - 1);
-    } else if (
-        direction === "right" &&
-        currentIndex < galleryImages.length - 1
-    ) {
+    }
+});
+
+rightArrowElement.addEventListener("click", () => {
+    if (currentIndex < galleryImages.length - 1) {
         updateImage(currentIndex + 1);
-    } else if (
-        direction === "right" &&
-        currentIndex === galleryImages.length - 1
-    ) {
+    } else if (currentIndex === galleryImages.length - 1) {
         updateImage(0);
     }
-};
+});
 
-leftArrowElement.addEventListener("click", () => navigate("left"));
-rightArrowElement.addEventListener("click", () => navigate("right"));
+largeImageElement.addEventListener("click", () => {
+    if (currentIndex < galleryImages.length - 1) {
+        updateImage(currentIndex + 1);
+    } else if (currentIndex === galleryImages.length - 1) {
+        updateImage(0);
+    }
+});
 
-[
-    largeImageElement,
-    imageIndexElement,
-    leftSideElement,
-    rightSideElement,
-].forEach((element) => {
-    element.addEventListener("click", (event) => {
-        if (
-            event.target === largeImageElement ||
-            event.target === imageIndexElement
-        ) {
-            navigate("right");
-        } else if (event.target === leftSideElement) {
-            navigate("left");
-        } else if (event.target === rightSideElement) {
-            navigate("right");
-        }
-    });
+imageIndexElement.addEventListener("click", () => {
+    if (currentIndex < galleryImages.length - 1) {
+        updateImage(currentIndex + 1);
+    } else if (currentIndex === galleryImages.length - 1) {
+        updateImage(0);
+    }
 });
 
 popup.addEventListener("click", (event) => {
