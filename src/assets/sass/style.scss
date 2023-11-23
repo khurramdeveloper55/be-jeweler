@@ -43,7 +43,7 @@ html {
 input:focus,
 textarea:focus {
     outline: none;
-    border-bottom: 1px solid #bb5644;
+    border-bottom: 1px solid $primary-clr;
 }
 
 .contact,
@@ -86,186 +86,111 @@ textarea:focus {
 
 /* INSPIRATIONS */
 
-.inspirations {
-    &__first {
-        margin-top: 11rem;
-    }
-    &__second {
-        margin-top: 12.5rem;
-    }
+.inspirations-main-section {
+    margin-top: $margin-lg;
+}
 
-    &__third {
-        margin-top: 11rem;
-    }
+.inspirations-paragraph {
+    font-size: 1.6rem;
+    font-family: bodoni-moda;
+    color: $paragraph-clr;
+}
 
-    &__jane {
-        margin-top: 5.75rem;
-        margin-left: 2.75rem;
-    }
+.inspirations-signature {
+    font-family: "Jost", sans-serif;
+    color: $secondary-clr;
+}
 
-    &__one {
-        position: relative;
-        &--1 {
-            color: #fff;
-            font-size: 13.5rem !important;
-            /* font-family: bodoni-font; */
-            position: absolute;
-            z-index: -99;
-            margin-top: -5rem;
-            left: 54%;
-            transform: translateX(-50%);
-        }
+.inspirations-sections {
+    margin-top: 12rem;
+}
 
-        &--2 {
-            color: #fff;
-            font-size: 13.5rem !important;
-            /* font-family: bodoni-font; */
-            position: absolute;
-            z-index: -99;
-            margin-top: -6rem;
-            left: 47%;
-            transform: translateX(-50%);
-        }
+.inspirations-digit {
+    color: #fff;
+    font-size: 13.5rem !important;
+    font-family: bodoni-moda;
+    position: absolute;
+    z-index: -1;
+    margin-top: -6rem;
+    left: 52%;
+    transform: translateX(-50%);
+}
 
-        &--3 {
-            color: #fff;
-            font-size: 13.5rem !important;
-            /* font-family: bodoni-font; */
-            position: absolute;
-            z-index: -99;
-            margin-top: -5rem;
-            left: 54%;
-            transform: translateX(-50%);
-        }
-    }
+.inspirations-digit-change {
+    margin-top: -6rem !important;
+    left: 46% !important;
+}
 
-    &__para {
-        font-size: 1.6rem;
-        /* font-family: bodoni-font; */
-        padding-right: 8rem;
-        /* color: $dark-grey-3; */
-    }
+.inspirations-heading {
+    font-size: 2.8rem;
+    font-family: bodoni-moda;
+    font-weight: 400;
+    color: $dark-clr;
+}
 
-    &__img {
-        width: 100%;
-    }
+.inspirations-paragraph-color {
+    color: $secondary-clr;
+    font-family: "Jost", sans-serif;
+}
 
-    &__signature {
-        display: flex;
-        flex-direction: column;
-        padding-right: 7.5rem;
-        align-items: flex-end;
-        margin-top: 1.75rem;
+.inspirations-button {
+    width: 165px;
+    height: 50px;
+    font-weight: 500;
+    margin-top: 3rem;
 
-        &--para {
-            margin-top: 2rem;
-            font-family: "Jost", sans-serif;
-            /* color: $para-color-2; */
-        }
-    }
-
-    &__sign {
-        width: 25%;
-        display: flex;
-    }
-
-    &__wrapper {
-        width: 100%;
-    }
-
-    &__content1 {
-        padding-left: 5rem;
-        padding-right: 2rem;
-    }
-
-    &__content2 {
-        padding-left: 1.25rem;
-        padding-right: 4.5rem;
-    }
-
-    &__content3 {
-        padding-left: 5rem;
-        padding-right: 2rem;
-    }
-
-    &__sub {
-        font-size: 2.5rem;
-        /* font-family: bodoni-font; */
-        font-weight: 400;
-
-        &-para {
-            padding-top: 2rem;
-            font-family: "Jost", sans-serif;
-            /* color: $para-color-2; */
-        }
-    }
-
-    &__btn {
-        width: 165px;
-        height: 50px;
-        font-weight: 500;
-        margin-top: 3rem;
-
-        &:hover {
-            background-color: transparent;
-            border: 1px solid $primary-clr;
-            color: $primary-clr;
-        }
+    &:hover {
+        background-color: transparent;
+        border: 1px solid $primary-clr;
+        color: $primary-clr;
     }
 }
 
 /* Subscribe */
 
-.subscribe-wrapper {
-    margin: 0 7.75rem;
-    margin-top: 9.5rem;
+.subscription {
+    margin-top: 8rem;
 }
 
-.subscribe {
+.subscription-section {
     text-align: center;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 2.5rem 5rem;
-    padding-bottom: 5.5rem;
+    padding-bottom: 5rem;
+}
 
-    &__img {
-        margin-top: -6.5rem;
-    }
+.subscription-image {
+    margin-top: -6.5rem;
+}
 
-    &__heading {
-        /* font-family: bodoni-font; */
-        /* color: $dark-grey-3; */
-        font-weight: 400;
-        margin-top: 2.1rem;
-        margin-bottom: 2.8rem;
-    }
+.subscription-heading {
+    font-family: bodoni-moda;
+    font-weight: 400;
+    color: $paragraph-clr;
+}
 
-    &__sub-heading {
+.subscription-sub-heading {
+    color: $primary-clr;
+}
+
+.subscription-input {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+    width: 30%;
+    font-family: "Jost", sans-serif;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+}
+
+.subscription-button {
+    width: 150px;
+    font-weight: 500;
+    margin-left: 1rem;
+    &:hover {
+        background-color: transparent;
         color: $primary-clr;
-    }
-
-    .mn {
-        margin-top: 0 !important;
-    }
-
-    input {
-        border: none;
-        border-bottom: 1px solid #000;
-        background: none;
-        width: 30%;
-        font-family: "Jost", sans-serif;
-        padding-bottom: 0.5rem;
-        padding-left: 0.75rem;
-    }
-
-    &__btn {
-        width: 150px;
-        font-weight: 500;
-        margin-left: 1rem;
-        &:hover {
-            background-color: transparent;
-            color: $primary-clr;
-            border: 1px solid $primary-clr;
-        }
+        border: 1px solid $primary-clr;
     }
 }
 
