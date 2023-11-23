@@ -1,0 +1,87 @@
+/* Media Query */
+@media only screen and (max-width: 960px) {
+  .info-year {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main-section-heading {
+    font-size: 2.75rem;
+  }
+  .gallery-container {
+    padding: 2.5rem !important;
+  }
+  .t-md-center {
+    text-align: center;
+  }
+  .copyright-button {
+    display: block;
+    margin: 0 auto;
+  }
+  .contact-heading {
+    margin-bottom: 1.5rem;
+  }
+  .contact-btn {
+    margin-top: 0.5rem;
+  }
+  .contact-tel {
+    font-size: 2rem;
+  }
+  .contact-email {
+    font-size: 1.5rem;
+  }
+  .qa-container {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+  .qa-content {
+    padding-top: 5rem !important;
+  }
+  .info-since,
+  .info-description {
+    text-align: center;
+  }
+  .info-year {
+    margin: 0 auto;
+  }
+  .info-shop:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+  .info-percent {
+    font-size: 2rem;
+  }
+  .info-detail {
+    font-size: 0.8rem;
+  }
+  .info-wrapper {
+    justify-content: space-between !important;
+  }
+  .collection-container {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+  .collection-heading {
+    font-size: 2rem;
+  }
+  .collection-quote {
+    margin: 0 auto;
+    width: 10%;
+  }
+  .about-story {
+    padding-right: 0;
+    text-align: center;
+    border: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .popup-image-container,
+  .popup-close,
+  .index {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .single-xl {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=media-query.css.map */

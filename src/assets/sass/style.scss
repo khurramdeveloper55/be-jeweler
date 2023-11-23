@@ -21,11 +21,443 @@ html {
     color: $white-clr;
     font-weight: 500;
     font-family: "Jost", sans-serif;
-    transition: all 0.2s;
+    transition: all 0.4s;
     &:hover {
         background-color: transparent;
         border: 1px solid $primary-clr;
         color: $primary-clr;
+    }
+}
+
+.theme-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-border {
+    border-radius: 320px 320px 0 0;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 1px solid #bb5644;
+}
+
+.contact,
+.company-info {
+    margin-top: $margin-lg;
+    font-family: "Jost", sans-serif;
+}
+
+/* MAIN HEADING */
+
+.main-section {
+    margin-top: $margin-lg;
+}
+
+.main-section-hr {
+    width: 24px;
+    height: 5px !important;
+    margin-right: 10px;
+    margin-top: 8px;
+    background-color: $primary-clr;
+    opacity: 1;
+}
+
+.main-section-paragraph {
+    font-family: "Jost", sans-serif;
+    margin-bottom: 0;
+    color: $primary-clr;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.main-section-heading {
+    /* font-family: bodoni-moda; */
+    font-family: "Bodoni Moda", serif;
+    color: $primary-clr;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+/* INSPIRATIONS */
+
+.inspirations {
+    &__first {
+        margin-top: 11rem;
+    }
+    &__second {
+        margin-top: 12.5rem;
+    }
+
+    &__third {
+        margin-top: 11rem;
+    }
+
+    &__jane {
+        margin-top: 5.75rem;
+        margin-left: 2.75rem;
+    }
+
+    &__one {
+        position: relative;
+        &--1 {
+            color: #fff;
+            font-size: 13.5rem !important;
+            /* font-family: bodoni-font; */
+            position: absolute;
+            z-index: -99;
+            margin-top: -5rem;
+            left: 54%;
+            transform: translateX(-50%);
+        }
+
+        &--2 {
+            color: #fff;
+            font-size: 13.5rem !important;
+            /* font-family: bodoni-font; */
+            position: absolute;
+            z-index: -99;
+            margin-top: -6rem;
+            left: 47%;
+            transform: translateX(-50%);
+        }
+
+        &--3 {
+            color: #fff;
+            font-size: 13.5rem !important;
+            /* font-family: bodoni-font; */
+            position: absolute;
+            z-index: -99;
+            margin-top: -5rem;
+            left: 54%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__para {
+        font-size: 1.6rem;
+        /* font-family: bodoni-font; */
+        padding-right: 8rem;
+        /* color: $dark-grey-3; */
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__signature {
+        display: flex;
+        flex-direction: column;
+        padding-right: 7.5rem;
+        align-items: flex-end;
+        margin-top: 1.75rem;
+
+        &--para {
+            margin-top: 2rem;
+            font-family: "Jost", sans-serif;
+            /* color: $para-color-2; */
+        }
+    }
+
+    &__sign {
+        width: 25%;
+        display: flex;
+    }
+
+    &__wrapper {
+        width: 100%;
+    }
+
+    &__content1 {
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
+
+    &__content2 {
+        padding-left: 1.25rem;
+        padding-right: 4.5rem;
+    }
+
+    &__content3 {
+        padding-left: 5rem;
+        padding-right: 2rem;
+    }
+
+    &__sub {
+        font-size: 2.5rem;
+        /* font-family: bodoni-font; */
+        font-weight: 400;
+
+        &-para {
+            padding-top: 2rem;
+            font-family: "Jost", sans-serif;
+            /* color: $para-color-2; */
+        }
+    }
+
+    &__btn {
+        width: 165px;
+        height: 50px;
+        font-weight: 500;
+        margin-top: 3rem;
+
+        &:hover {
+            background-color: transparent;
+            border: 1px solid $primary-clr;
+            color: $primary-clr;
+        }
+    }
+}
+
+/* Subscribe */
+
+.subscribe-wrapper {
+    margin: 0 7.75rem;
+    margin-top: 9.5rem;
+}
+
+.subscribe {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2.5rem 5rem;
+    padding-bottom: 5.5rem;
+
+    &__img {
+        margin-top: -6.5rem;
+    }
+
+    &__heading {
+        /* font-family: bodoni-font; */
+        /* color: $dark-grey-3; */
+        font-weight: 400;
+        margin-top: 2.1rem;
+        margin-bottom: 2.8rem;
+    }
+
+    &__sub-heading {
+        color: $primary-clr;
+    }
+
+    .mn {
+        margin-top: 0 !important;
+    }
+
+    input {
+        border: none;
+        border-bottom: 1px solid #000;
+        background: none;
+        width: 30%;
+        font-family: "Jost", sans-serif;
+        padding-bottom: 0.5rem;
+        padding-left: 0.75rem;
+    }
+
+    &__btn {
+        width: 150px;
+        font-weight: 500;
+        margin-left: 1rem;
+        &:hover {
+            background-color: transparent;
+            color: $primary-clr;
+            border: 1px solid $primary-clr;
+        }
+    }
+}
+
+/* ABOUT US STARTS */
+
+.info-since {
+    font-size: 1.2rem;
+    color: $paragraph-clr;
+}
+
+.info-year {
+    font-family: "Bodoni Moda", serif;
+    color: $primary-clr;
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.info-description {
+    color: $secondary-clr;
+    margin-top: 1.5rem;
+}
+.info-percent {
+    font-family: "Bodoni Moda", serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: $dark-clr;
+}
+.info-detail {
+    font-size: 1rem;
+    color: $grey-clr;
+}
+
+.info-shop {
+    &:not(:last-child) {
+        margin-bottom: 5rem;
+    }
+}
+
+.info-wrapper {
+    justify-content: center !important;
+}
+
+.collection-container {
+    margin-top: 6rem;
+    padding-left: 3.5rem !important;
+    padding-right: 3.5rem !important;
+    padding-bottom: 2.5rem;
+    margin-bottom: 6rem;
+    background-color: #fff;
+    position: relative;
+    font-family: "Jost", sans-serif;
+}
+
+.collection-content {
+    padding-top: $margin-lg;
+}
+
+.collection-heading {
+    font-size: 2.75rem;
+    color: $dark-clr;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+}
+
+.collection-description {
+    color: $secondary-clr;
+}
+
+.collection-button {
+    background: none;
+    border: none;
+    color: $primary-clr;
+    margin-top: 2.75rem;
+    padding-left: 0;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.about-authority {
+    font-family: "Jost", sans-serif;
+    color: $secondary-clr;
+}
+
+.about-story {
+    padding-right: 6rem;
+    border-right: 1px solid #f0e1d4;
+}
+
+/* CONTACT US */
+
+.contact-heading {
+    margin-bottom: 4rem;
+    font-weight: 400;
+    color: $paragraph-clr;
+}
+
+.contact-clr {
+    color: $secondary-clr;
+}
+
+.contact-time-mb {
+    margin-bottom: 1.9rem;
+}
+
+.contact-tel {
+    font-size: 2.75rem;
+    /* font-family: bodoni-moda; */
+    font-family: "Bodoni Moda", serif;
+    color: $dark-clr;
+}
+
+.contact-email {
+    color: $paragraph-clr;
+    /* font-family: bodoni-moda; */
+    font-family: "Bodoni Moda", serif;
+    font-size: 1.8rem;
+}
+
+.contact-btn {
+    width: 165px;
+    height: 45px;
+    background: none;
+    border: 1px solid $primary-clr;
+    color: $primary-clr;
+    margin-top: 1.6rem;
+    font-weight: 500;
+    transition: all 0.2s;
+    &:hover {
+        background-color: $primary-clr;
+        color: #fff;
+    }
+}
+
+/* Q&A SECTION */
+
+.qa-container {
+    background-color: #fff;
+    margin-top: 6.2rem;
+    padding-left: 4.25rem !important;
+    padding-right: 4.75rem !important;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.qa-content {
+    padding-top: 7rem;
+}
+
+.qa-heading {
+    font-size: 2rem !important;
+    text-align: left;
+    color: $paragraph-clr;
+    font-family: bodoni-font;
+}
+
+.qa-input-box {
+    padding-left: 0.5rem;
+    margin-top: 3.5rem;
+}
+
+.qa-input {
+    display: block;
+    padding-left: 0.75rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.4rem;
+    font-family: "Jost", sans-serif;
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 100%;
+    overflow: hidden;
+
+    &:focus {
+        &::placeholder {
+            color: $paragraph-clr !important;
+        }
+    }
+}
+
+.qa-button {
+    width: 100%;
+    height: 48px;
+    background-color: $primary-clr;
+    border: none;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+    transition: all 0.2s;
+
+    &:hover {
+        background-color: #fff;
+        color: $primary-clr;
+        border: 1px solid $primary-clr;
     }
 }
 
