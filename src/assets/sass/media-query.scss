@@ -40,6 +40,13 @@
     }
 }
 @media only screen and (max-width: 991px) {
+    .main-banner-heading {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .carousel-caption {
+        margin-right: -80px !important;
+    }
     .md-none {
         display: none;
     }
@@ -91,6 +98,61 @@
     .main-section-heading,
     .products-heading {
         font-size: 2.75rem;
+    }
+    .main-banner-title-box {
+        justify-content: center;
+    }
+    .main-banner-heading {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    .banner-button {
+        display: none;
+    }
+    .carousel-image {
+        margin-left: 50px;
+    }
+    .carousel-inner {
+        height: 600px;
+    }
+    .carousel-caption {
+        top: 100%;
+        align-items: center !important;
+    }
+    .carousel-caption-box {
+        margin-right: 80px;
+    }
+    .carousel-caption-price,
+    .carousel-caption-title {
+        text-align: center;
+    }
+    .carousel-caption-button {
+        display: none;
+    }
+    .slider-btn-left {
+        left: 5%;
+    }
+    .slider-btn-right {
+        left: 50%;
+    }
+    .carousel-xl-button {
+        display: inline;
+        color: $primary-clr;
+        font-family: "Jost", sans-serif;
+        border: none;
+        background: none;
+        position: relative;
+        left: 34%;
+        transform: translate(-50%, 50%);
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $primary-clr;
+        }
     }
     .exclusive-categories {
         margin-bottom: 36rem;
@@ -285,6 +347,15 @@
 }
 
 @media only screen and (max-width: 480px) {
+    .carousel-inner {
+        height: 500px;
+    }
+    .carousel-xl-button {
+        left: 32%;
+    }
+    .slider-btn-right {
+        left: 45%;
+    }
     .single-xl {
         width: 100% !important;
     }
@@ -303,6 +374,15 @@
 }
 
 @media only screen and (max-width: 440px) {
+    .carousel-image {
+        margin-left: 35px;
+    }
+    .carousel-xl-button {
+        left: 29%;
+    }
+    .slider-btn-right {
+        left: 35%;
+    }
     .surprise-digit-gap,
     .surprise-gap {
         margin-top: 2.5rem !important;
@@ -316,6 +396,15 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .carousel-inner {
+        height: 425px;
+    }
+    .carousel-xl-button {
+        left: 25%;
+    }
+    .slider-btn-right {
+        left: 23%;
+    }
     .client-logo {
         padding: 35px;
     }

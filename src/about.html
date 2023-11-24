@@ -2,62 +2,66 @@
 {{ fileInclude 'src/assets/partials/header.html' title='BeJeweler'
 description='' }}
 <main id="main">
-    <!-- MAIN SECTION -->
-    <section class="main-section">
-        <div class="d-flex justify-content-center">
-            <hr class="main-section-hr" />
-            <p class="main-section-paragraph">BEJEWELERY</p>
-        </div>
-        <h1 class="main-section-heading">ABOUT US</h1>
-    </section>
-
-    <!--ABOUT INFO SECTION -->
-    {{ fileInclude 'src/assets/partials/info.html' }}
-    <section class="mx-md-0 mx-4">
-        <div class="container collection-container">
-            <div class="theme-image">
-                <img src="assets/img/jeweler2-theme.svg" alt="" />
+    <section class="image-wrapper">
+        <!-- MAIN SECTION -->
+        <section class="main-section">
+            <div class="d-flex justify-content-center">
+                <hr class="main-section-hr" />
+                <p class="main-section-title">BEJEWELERY</p>
             </div>
-            <div class="collection-content">
-                <div class="row">
-                    <div
-                        class="col-md-6 d-flex flex-column d-md-block order-2 order-md-1"
-                    >
-                        <h2
-                            class="collection-heading pt-5 pt-md-0 pe-md-5 pe-0 text-md-start text-center"
+            <h1 class="main-section-heading">ABOUT US</h1>
+        </section>
+
+        <!--ABOUT INFO SECTION -->
+        {{ fileInclude 'src/assets/partials/info.html' }}
+        <section class="mx-md-0 mx-4">
+            <div class="container collection-container">
+                <div class="theme-image">
+                    <img src="assets/img/jeweler2-theme.svg" alt="" />
+                </div>
+                <div class="collection-content">
+                    <div class="row">
+                        <div
+                            class="col-md-6 d-flex flex-column d-md-block order-2 order-md-1"
                         >
-                            CURABITUR CRAS NIBH VEL, LECUS. MAURIS AUCTOR
-                            ADIPISC SED AC ETIAM VIVERRA.
-                        </h2>
-                        <img
-                            class="mt-5 mb-4 collection-quote"
-                            src="assets/img/jeweler2-quote.svg"
-                            alt=""
-                        />
-                        <p
-                            class="collection-description text-md-start text-center pe-0 pe-md-5"
+                            <h2
+                                class="collection-heading pt-5 pt-md-0 pe-md-5 pe-0 text-md-start text-center"
+                            >
+                                CURABITUR CRAS NIBH VEL, LECUS. MAURIS AUCTOR
+                                ADIPISC SED AC ETIAM VIVERRA.
+                            </h2>
+                            <img
+                                class="mt-5 mb-4 collection-quote"
+                                src="assets/img/jeweler2-quote.svg"
+                                alt=""
+                            />
+                            <p
+                                class="collection-description text-md-start text-center pe-0 pe-md-5"
+                            >
+                                Amet ipsum, enim massa enim mattis pulvinar.
+                                Pretium sem a, sed lacus ac. Mattis sapien nunc
+                                malesuada tincidunt. Libero integer velit, lorem
+                                est. Velit adipiscing scelerisque eget nunc.
+                                Nunc, scelerisque vel netus pulvinar quam
+                                phasellus. Aenean at id nam neque fermentum.
+                            </p>
+                            <button class="collection-button">
+                                view collection
+                            </button>
+                        </div>
+                        <div
+                            class="col-md-6 d-flex d-md-block order-1 order-md-2"
                         >
-                            Amet ipsum, enim massa enim mattis pulvinar. Pretium
-                            sem a, sed lacus ac. Mattis sapien nunc malesuada
-                            tincidunt. Libero integer velit, lorem est. Velit
-                            adipiscing scelerisque eget nunc. Nunc, scelerisque
-                            vel netus pulvinar quam phasellus. Aenean at id nam
-                            neque fermentum.
-                        </p>
-                        <button class="collection-button">
-                            view collection
-                        </button>
-                    </div>
-                    <div class="col-md-6 d-flex d-md-block order-1 order-md-2">
-                        <img
-                            class="image-border w-100"
-                            src="assets/img/jeweler2-about-pic1.webp"
-                            alt=""
-                        />
+                            <img
+                                class="image-border w-100"
+                                src="assets/img/jeweler2-about-pic1.webp"
+                                alt=""
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
     <section class="about-authority">
         <div class="container">

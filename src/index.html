@@ -2,16 +2,101 @@
 {{ fileInclude 'src/assets/partials/header.html' title='BeJeweler'
 description='' }}
 <main id="main">
-    <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-12">
-                <a href="product.html">product</a>
-                <a href="inspirations.html">inspirations</a>
-                <a href="about.html">about</a>
-                <a href="contact.html">contact</a>
+
+  <!-- BANNER -->
+
+  <header class="banner-image-wrapper">
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <div class="banner-content">
+              <div class="d-flex main-banner-title-box">
+                <hr class="main-banner-hr" />
+                <p class="main-banner-title">BEJEWELRY</p>
             </div>
+              <h1 class="main-banner-heading">
+                EXCLUSIVE <br />
+                JEWELRY
+              </h1>
+              <button class="btns banner-button mt-4">Go to shop</button>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="banner-carousel">
+              <div
+              id="carouselFade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="assets/img/jeweler2-product-pic1.webp"
+                    class="d-block carousel-image w-75 animate-right"
+                    alt="Wedding Ring"
+                  />
+                  <div class="carousel-caption animate-left d-flex flex-column align-items-md-end align-items-center">
+                    <div class="carousel-caption-box">
+                      <p class="carousel-caption-title">Wedding Ring <br> with 12 diamonds</p>
+                      <h5 class="carousel-caption-price">$2299.90</h5>
+                      <button class="carousel-caption-button">Buy now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/jeweler2-product-pic2.webp"
+                    class="d-block carousel-image w-75 animate-right"
+                    alt="Silver Ring"
+                  />
+                  <div class="carousel-caption animate-left d-flex flex-column align-items-md-end align-items-center">
+                    <div class="carousel-caption-box">
+                      <p class="carousel-caption-title">Silver Ring <br> with diamond heart</p>
+                      <h5 class="carousel-caption-price">$899.99</h5>
+                      <button class="carousel-caption-button">Buy now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="assets/img/jeweler2-product-pic7-800x800.webp"
+                    class="d-block carousel-image w-75 animate-right"
+                    alt="Golden Earrings"
+                  />
+                  <div class="carousel-caption animate-left d-flex flex-column align-items-md-end align-items-center">
+                    <div class="carousel-caption-box">
+                      <p class="carousel-caption-title">Golden earrings <br> with pearls</p>
+                      <h5 class="carousel-caption-price">$1329.99</h5>
+                      <button class="carousel-caption-button">Buy now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="slider-btn slider-btn-left"
+                data-bs-target="#carouselFade"
+                data-bs-slide="prev"
+              >
+                <img class="w-75" src="assets/img/left-arrow-svgrepo-com.svg" alt="">
+              </button>
+              <button class="carousel-xl-button">Buy now</button>
+              <button
+                class="slider-btn slider-btn-right"
+                data-bs-target="#carouselFade"
+                data-bs-slide="next"
+              >
+              <img class="w-75" src="assets/img/right-arrow-svgrepo-com.svg" alt="">
+              </button>
+            </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="vl-left"></div>
+      <div class="vl-right"></div>
     </div>
+  </header>
 
     <!-- HOME COUNT SECTION -->
     <section id="home-counter">
@@ -157,7 +242,7 @@ description='' }}
             <div class="ms-0 ms-md-5 mb-5">
                 <div class="d-flex justify-content-start">
                     <hr class="main-section-hr" />
-                    <p class="main-section-paragraph">VESTIBULUM</p>
+                    <p class="main-section-title">VESTIBULUM</p>
                 </div>
                 <h2 class="products-heading">PRODUCTS</h1>
             </div>

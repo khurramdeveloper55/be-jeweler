@@ -56,6 +56,11 @@ textarea:focus {
     font-family: "Jost", sans-serif;
 }
 
+.image-wrapper {
+    background-image: url(../img/jeweler2-section-bg1.webp);
+    background-position: top;
+}
+
 /* MAIN HEADING */
 
 .main-section {
@@ -71,7 +76,7 @@ textarea:focus {
     opacity: 1;
 }
 
-.main-section-paragraph {
+.main-section-title {
     font-family: "Jost", sans-serif;
     margin-bottom: 0;
     color: $primary-clr;
@@ -88,6 +93,153 @@ textarea:focus {
 }
 
 /* HOME PAGE */
+
+/* HEADER / BANNER */
+
+.banner-image-wrapper {
+    background-image: url(../img/jeweler2-section-bg1.webp);
+    background-position: top right;
+}
+
+.banner {
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 50px;
+}
+
+.vl-left {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 33%;
+    height: 100%;
+    top: 0;
+}
+
+.vl-right {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    right: 33%;
+    height: 100%;
+    top: 0;
+}
+
+.main-banner-hr {
+    width: 20px;
+    border: 1px solid $primary-clr;
+    background-color: $primary-clr;
+    margin-right: 10px;
+    margin-top: 6px;
+    opacity: 1;
+}
+
+.main-banner-title {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: "Jost", sans-serif;
+    color: $primary-clr;
+}
+
+.main-banner-heading {
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 4.75rem;
+    font-family: "Bodoni Moda", serif;
+    color: $primary-clr;
+}
+
+.banner-content {
+    position: relative;
+    top: 40%;
+    z-index: 9;
+}
+
+.carousel-caption-box {
+    max-width: 175px;
+    position: relative;
+}
+
+.carousel-caption-title {
+    font-size: 1.3rem;
+    color: $dark-clr;
+    font-family: "Jost", sans-serif;
+    text-align: left;
+}
+
+.carousel-caption-price {
+    font-size: 2.5rem;
+    color: $dark-clr;
+    font-family: "Bodoni Moda", serif;
+    text-align: left;
+}
+
+.carousel-caption-button {
+    border: none;
+    background: none;
+    font-family: "Jost", sans-serif;
+    color: $primary-clr;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $primary-clr;
+    }
+}
+
+.slider-btn {
+    background: none;
+    border: none;
+    top: 20px;
+    position: relative;
+    left: 65%;
+    transition: all 0.5s;
+}
+.slider-btn:hover {
+    transform: scale(1.3);
+}
+
+.carousel-xl-button {
+    display: none;
+}
+
+.animate-right {
+    animation-name: run;
+    transform-origin: center bottom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes run {
+    0% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.animate-left {
+    animation-name: runleft;
+    transform-origin: center bottom;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+@keyframes runleft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 
 /* HOME COUNT */
 .home-percent {

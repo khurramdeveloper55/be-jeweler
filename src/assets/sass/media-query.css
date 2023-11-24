@@ -38,6 +38,13 @@
   }
 }
 @media only screen and (max-width: 991px) {
+  .main-banner-heading {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .carousel-caption {
+    margin-right: -80px !important;
+  }
   .md-none {
     display: none;
   }
@@ -89,6 +96,42 @@
   .main-section-heading,
   .products-heading {
     font-size: 2.75rem;
+  }
+  .main-banner-title-box {
+    justify-content: center;
+  }
+  .main-banner-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .banner-button {
+    display: none;
+  }
+  .carousel-image {
+    margin-left: 50px;
+  }
+  .carousel-inner {
+    height: 600px;
+  }
+  .carousel-caption {
+    top: 100%;
+    align-items: center !important;
+  }
+  .carousel-caption-box {
+    margin-right: 80px;
+  }
+  .carousel-caption-price,
+  .carousel-caption-title {
+    text-align: center;
+  }
+  .carousel-caption-button {
+    display: none;
+  }
+  .slider-btn-left {
+    left: 5%;
+  }
+  .slider-btn-right {
+    right: 60%;
   }
   .exclusive-categories {
     margin-bottom: 36rem;
@@ -266,6 +309,9 @@
   }
 }
 @media only screen and (max-width: 480px) {
+  .carousel-inner {
+    height: 500px;
+  }
   .single-xl {
     width: 100% !important;
   }
@@ -283,6 +329,12 @@
   }
 }
 @media only screen and (max-width: 440px) {
+  .carousel-image {
+    margin-left: 35px;
+  }
+  .slider-btn-right {
+    left: 50%;
+  }
   .surprise-digit-gap,
   .surprise-gap {
     margin-top: 2.5rem !important;
@@ -295,6 +347,9 @@
   }
 }
 @media only screen and (max-width: 400px) {
+  .carousel-inner {
+    height: 425px;
+  }
   .client-logo {
     padding: 35px;
   }
