@@ -1,4 +1,42 @@
 /* Media Query */
+@media only screen and (min-width: 2000px) {
+  .exclusive-categories {
+    margin-bottom: 35rem;
+  }
+  .exclusive-categories {
+    margin-bottom: 35rem;
+  }
+  .exclusive-images {
+    height: 600px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 2000px) {
+  .exclusive-categories {
+    margin-bottom: 32rem;
+  }
+  .exclusive-categories {
+    margin-bottom: 30rem;
+  }
+  .exclusive-images {
+    height: 600px;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 1550px) {
+  .exclusive-categories {
+    margin-bottom: 24rem;
+  }
+  .exclusive-images {
+    height: auto;
+    overflow: auto;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .client-logo {
+    padding: 18px;
+  }
+}
 @media only screen and (max-width: 991px) {
   .md-none {
     display: none;
@@ -9,15 +47,90 @@
   .md-pe {
     padding-right: 2rem !important;
   }
+  .exclusive-categories {
+    margin-bottom: 18rem;
+  }
+  .exclusive-images {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+  }
+  .exclusive-season,
+  .exclusive-price {
+    overflow: hidden;
+    height: 500px;
+  }
+  .exclusive-banner-heading {
+    font-size: 4rem;
+    line-height: 3.5rem;
+  }
+  .exclusive-off-heading {
+    font-size: 3.5rem;
+  }
+  .exclusive-categories {
+    margin-bottom: 32rem;
+  }
+  .exclusive-section {
+    margin-bottom: 38rem;
+  }
 }
 @media only screen and (max-width: 960px) {
   .info-year {
     font-size: 4rem;
   }
+  .surprise-section {
+    padding: 6rem 0;
+  }
+  .exclusive-category {
+    margin-bottom: 2rem;
+  }
 }
 @media only screen and (max-width: 767px) {
-  .main-section-heading {
+  .main-section-heading,
+  .products-heading {
     font-size: 2.75rem;
+  }
+  .exclusive-categories {
+    margin-bottom: 36rem;
+  }
+  .exclusive-banner-heading {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+  .exclusive-off-heading {
+    font-size: 2.2rem;
+  }
+  .surprise-heading {
+    font-size: 2rem;
+  }
+  .surprise-content-center {
+    justify-content: center;
+  }
+  .surprise-text-right {
+    order: 1;
+    width: 50% !important;
+    text-align: center;
+  }
+  .surprise-image {
+    order: 3;
+  }
+  .surprise-offside {
+    order: 2;
+    text-align: center;
+    width: 50% !important;
+  }
+  .surprise-gap {
+    margin-top: 0;
+  }
+  .surprise-digit {
+    font-size: 2rem;
+  }
+  .surprise-text-right h5,
+  .surprise-offside h5 {
+    font-size: 1.1rem !important;
+  }
+  .client-logo {
+    padding: 50px;
   }
   .gallery-container {
     padding: 2.5rem !important;
@@ -141,6 +254,17 @@
     width: 90%;
   }
 }
+@media only screen and (max-width: 575px) {
+  .home-percent,
+  .home-paragraph {
+    text-align: center;
+  }
+  .exclusive-images,
+  .exclusive-season,
+  .exclusive-price {
+    height: auto;
+  }
+}
 @media only screen and (max-width: 480px) {
   .single-xl {
     width: 100% !important;
@@ -153,5 +277,33 @@
   }
   .inspirations-digit {
     font-size: 9.5rem !important;
+  }
+  .exclusive-category {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .surprise-digit-gap,
+  .surprise-gap {
+    margin-top: 2.5rem !important;
+  }
+  .surprise-text-right {
+    width: 100% !important;
+  }
+  .surprise-offside {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .client-logo {
+    padding: 35px;
+  }
+  .exclusive-off-description {
+    margin-bottom: 1rem !important;
+    margin-top: 0.5rem !important;
+  }
+  .exclusive-section,
+  .exclusive-categories {
+    margin-bottom: 30rem;
   }
 }/*# sourceMappingURL=media-query.css.map */

@@ -86,7 +86,182 @@ textarea:focus {
     font-weight: 400;
 }
 
+/* HOME */
+
+/* HOME COUNT */
+.home-percent {
+    color: $grey-clr;
+    font-size: 2.75rem !important;
+    text-align: left;
+    font-family: "Bodoni Moda", serif;
+}
+.home-paragraph {
+    color: $dark-clr;
+    font-size: 0.9rem !important;
+    font-family: "Jost", sans-serif;
+}
+
+/* EXCLUSIVE */
+.exclusive-section {
+    background-color: $bg-color;
+    color: #fff;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 28rem;
+}
+.exclusive-content {
+    padding-top: 8rem;
+}
+.exclusive-heading {
+    color: #fff;
+    text-align: center;
+    font-size: 4.75rem;
+    font-family: "Bodoni Moda", serif;
+}
+.exclusive-sub-heading {
+    font-family: "Bodoni Moda", serif;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+.exclusive-category {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    margin-bottom: 6rem;
+    transition: all 0.5s;
+}
+.exclusive-category-image {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15rem;
+    transition: all 0.5s;
+}
+.exclusive-category:hover {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    margin-top: -1rem;
+}
+.exclusive-category:hover .exclusive-category-image {
+    background-color: $primary-clr !important;
+    border: none;
+}
+.exclusive-category-name {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    margin-top: 2rem;
+}
+.exclusive-images {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 89vw;
+    margin: 0 auto;
+    display: flex;
+}
+
+.exclusive-banner-heading {
+    line-height: 4.25rem;
+    font-size: 5rem;
+    color: #fff;
+    position: absolute;
+    font-family: "Bodoni Moda";
+    top: 25%;
+    z-index: 1;
+    text-align: left;
+    left: 13%;
+}
+.exclusive-price {
+    position: relative;
+    z-index: 12;
+}
+
+.exclusive-off {
+    position: absolute;
+    left: 13%;
+    top: 20%;
+}
+.exclusive-off-heading {
+    font-size: 4.5rem;
+    font-family: "Bodoni Moda", serif;
+    color: $paragraph-clr;
+}
+.exclusive-off-description {
+    font-family: "Jost", sans-serif;
+    color: $secondary-clr;
+    margin-bottom: 3rem !important;
+    margin-top: 1.5rem !important;
+}
+
+/* SURPRISE */
+.surprise-section {
+    width: 89vw;
+    margin: 0 auto;
+    color: #fff;
+    padding: 6rem 2rem;
+    position: relative;
+    background-color: $bg-color;
+    margin-top: 8rem;
+    font-family: "Jost", sans-serif;
+}
+.surprise-title {
+    color: $primary-clr;
+}
+.surprise-heading {
+    font-family: "Bodoni Moda", serif;
+    font-size: 2.75rem;
+}
+.surprise-digit {
+    font-family: "Bodoni Moda", serif;
+    font-size: 2.75rem;
+    color: $primary-clr;
+}
+.surprise-digit-gap {
+    margin-top: 7.5rem;
+}
+.surprise-gap {
+    margin-top: 5rem !important;
+}
+.surprise-text-right {
+    text-align: right;
+}
+
+/* HOME CLIENTS */
+.client-logos {
+    margin-top: 6rem;
+}
+.client-logo {
+    padding: 30px 50px;
+    cursor: pointer;
+    position: relative;
+}
+.client-logo::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: $primary-clr;
+}
+
+.client-logo:hover::after {
+    width: 100%;
+}
+
 /* PRODUCTS */
+
+.home-products {
+    margin-bottom: 8rem;
+}
+
+.products-heading {
+    font-size: 3rem;
+    color: $grey-clr;
+    text-align: left;
+    margin-top: -0.5rem;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 400;
+}
 
 .products-wrapper {
     padding: 0 5rem !important;
@@ -148,7 +323,7 @@ textarea:focus {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 0;
     height: 1px;
     background-color: $secondary-clr;
     visibility: hidden;
@@ -159,14 +334,8 @@ textarea:focus {
 .product-show-digit:active {
     color: $secondary-clr;
 }
-.product-show-digit:active .product-show-digit::after {
-    visibility: visible;
-}
-.product-show-digit:focus {
-    color: $secondary-clr;
-}
-.product-show-digit:focus .product-show-digit::after {
-    visibility: visible;
+.product-show-digit:active::after {
+    width: 100%;
 }
 
 .product-filter {
@@ -182,6 +351,22 @@ textarea:focus {
 }
 .product-filter-hover:hover .product-filter {
     text-decoration: underline;
+}
+
+.products-button {
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2rem;
+    font-weight: 500;
+    width: 135px;
+    &:hover {
+        background-color: transparent;
+        color: $primary-clr;
+        border: 1px solid $primary-clr;
+    }
 }
 
 /* INSPIRATIONS */
