@@ -1,3 +1,4 @@
+<!-- HEADER -->
 {{ fileInclude 'src/assets/partials/header.html' title='BeJeweler'
 description='' }}
 <main id="main">
@@ -11,6 +12,8 @@ description='' }}
             </div>
         </div>
     </div>
+
+    <!-- HOME COUNT SECTION -->
     <section id="home-counter">
         <div class="container-fluid my-5 ps-sm-5">
             <div class="row">
@@ -35,6 +38,8 @@ description='' }}
             </div>
         </div>
     </section>
+
+    <!-- HOME EXCLUSIVE SECTION -->
     <section class="exclusive-section" id="exclusive">
         <div class="container-fluid exclusive-categories">
           <div class="theme-image">
@@ -145,6 +150,8 @@ description='' }}
           </div>
         </div>
       </section>
+
+      <!-- HOME PRODUCTS SECTION -->
     <section class="position-relative home-products">
         <div class="container-fluid products-wrapper">
             <div class="ms-0 ms-md-5 mb-5">
@@ -240,8 +247,11 @@ description='' }}
         </div>
         <button class="btns products-button">Go to shop</button>
     </section>
+
+    <!-- HOME INFO SECTION -->
     {{ fileInclude 'src/assets/partials/info.html' }}
 
+    <!-- HOME SURPRISE SECTION -->
     <section class="surprise-section">
         <div class="theme-image">
           <img src="assets/img/jeweler2-theme.svg" alt="" />
@@ -283,6 +293,7 @@ description='' }}
         </div>
       </section>
 
+      <!-- HOME CLIENTS SECTION -->
     <section class="client-logos">
         <div class="container">
           <div class="row">
@@ -319,6 +330,10 @@ description='' }}
           </div>
         </div>
       </section>
+
+      <!-- HOME SUBSCRIPTION -->
     {{ fileInclude 'src/assets/partials/form.html' }}
 </main>
+
+<!-- HOME FOOTER -->
 {{ fileInclude 'src/assets/partials/footer.html' }}

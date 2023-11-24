@@ -1,3 +1,4 @@
+/* IMPORTS */
 @import "imports.scss";
 
 /* COMMON CSS */
@@ -86,7 +87,7 @@ textarea:focus {
     font-weight: 400;
 }
 
-/* HOME */
+/* HOME PAGE */
 
 /* HOME COUNT */
 .home-percent {
@@ -101,7 +102,7 @@ textarea:focus {
     font-family: "Jost", sans-serif;
 }
 
-/* EXCLUSIVE */
+/* HOME EXCLUSIVE */
 .exclusive-section {
     background-color: $bg-color;
     color: #fff;
@@ -192,7 +193,7 @@ textarea:focus {
     margin-top: 1.5rem !important;
 }
 
-/* SURPRISE */
+/* HOME SURPRISE */
 .surprise-section {
     width: 89vw;
     margin: 0 auto;
@@ -248,7 +249,7 @@ textarea:focus {
     width: 100%;
 }
 
-/* PRODUCTS */
+/* PRODUCTS PAGE */
 
 .home-products {
     margin-bottom: 8rem;
@@ -369,7 +370,7 @@ textarea:focus {
     }
 }
 
-/* INSPIRATIONS */
+/* INSPIRATIONS PAGE */
 
 .inspirations-main-section {
     margin-top: $margin-lg;
@@ -479,7 +480,7 @@ textarea:focus {
     }
 }
 
-/* ABOUT US */
+/* ABOUT US PAGE */
 
 .info-since {
     font-size: 1.2rem;
@@ -565,7 +566,7 @@ textarea:focus {
     border-right: 1px solid #f0e1d4;
 }
 
-/* CONTACT US */
+/* CONTACT US PAGE */
 
 .contact-heading {
     margin-bottom: 4rem;
@@ -861,4 +862,5 @@ footer {
     cursor: pointer;
 }
 
+/* MEDIA QUERY */
 @import "media-query.scss";

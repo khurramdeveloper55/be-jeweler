@@ -1,6 +1,8 @@
+<!-- HEADER -->
 {{ fileInclude 'src/assets/partials/header.html' title='BeJeweler'
 description='' }}
 <main id="main">
+    <!-- MAIN HEADING -->
     <section class="main-section">
         <div class="d-flex justify-content-center">
             <hr class="main-section-hr" />
@@ -9,6 +11,7 @@ description='' }}
         <h1 class="main-section-heading">PRODUCTS</h1>
     </section>
 
+    <!-- PRODUCTS FILTER -->
     <div class="container-fluid products-wrapper">
         <div class="product-filter-wrapper pb-4 d-flex justify-content-end">
             <div class="product-show">
@@ -28,6 +31,8 @@ description='' }}
                 <p class="product-filter">Filters</p>
             </div>
         </div>
+
+        <!-- PRODUCTS FIRST ROW -->
         <div class="row">
             <div class="col-sm-4">
                 <div class="products-gallery">
@@ -69,6 +74,8 @@ description='' }}
                 </div>
             </div>
         </div>
+
+        <!-- PRODUCTS SECOND ROW -->
         <div class="row">
             <div class="col-sm-4">
                 <div class="products-gallery">
@@ -111,6 +118,8 @@ description='' }}
                 </div>
             </div>
         </div>
+
+        <!-- PRODUCTS THIRD ROW -->
         <div class="row">
             <div class="col-sm-4">
                 <div class="products-gallery">
@@ -155,4 +164,6 @@ description='' }}
         </div>
     </div>
 </main>
+
+<!-- FOOTER -->
 {{ fileInclude 'src/assets/partials/footer.html' }}
