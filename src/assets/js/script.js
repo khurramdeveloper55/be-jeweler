@@ -1,6 +1,87 @@
 "use strict";
 
-// Footer Gallery Popup
+// COUNTER ANIMATION
+
+function animateCounters(selector, increment) {
+    let displayValues = document.querySelectorAll(selector);
+    let interval = 1000;
+
+    displayValues.forEach((valueDisplay) => {
+        let startValue = 0;
+
+        let dataVal = valueDisplay.getAttribute("data-val");
+        let isPercentage = dataVal.includes("%");
+
+        let numericValue = isPercentage
+            ? parseFloat(dataVal)
+            : parseInt(dataVal);
+
+        let endValue = isPercentage ? (numericValue / 100) * 100 : numericValue;
+
+        let duration = endValue !== 0 ? Math.round(interval / endValue) : 0;
+
+        let counter = setInterval(function () {
+            startValue += increment;
+            valueDisplay.textContent = isPercentage
+                ? `${startValue}%`
+                : startValue;
+            if (startValue >= endValue) {
+                clearInterval(counter);
+            }
+        }, duration);
+    });
+}
+
+function createIntersectionObserver(targetSection, animationFunction) {
+    let animationTriggered = false;
+
+    return new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting && !animationTriggered) {
+                animationFunction(".counter", 1);
+                animationTriggered = true;
+                observer.disconnect();
+            }
+        });
+    });
+}
+
+function exclusiveIntersectionObserver(targetSection, animationFunction) {
+    let animationTriggered = false;
+
+    return new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting && !animationTriggered) {
+                animationFunction(".exclusive-counter", 10);
+                animationTriggered = true;
+                observer.disconnect();
+            }
+        });
+    });
+}
+
+let targetHomeSection = document.getElementById("home-counter");
+let targetInfoSection = document.getElementById("info-counter");
+let targetExclusiveSection = document.getElementById("exclusive");
+
+let observerHome = createIntersectionObserver(
+    targetHomeSection,
+    animateCounters
+);
+let observerInfo = createIntersectionObserver(
+    targetInfoSection,
+    animateCounters
+);
+let observerExclusive = exclusiveIntersectionObserver(
+    targetExclusiveSection,
+    animateCounters
+);
+
+observerInfo.observe(targetInfoSection);
+observerExclusive.observe(targetExclusiveSection);
+observerHome.observe(targetHomeSection);
+
+// FOOTER GALLLERY POPUP
 const galleryImages = Array.from(document.querySelectorAll(".gallery-image"));
 const popup = document.querySelector(".gallery-popup");
 const closeBtn = document.querySelector(".popup-close__svg");
@@ -73,4 +154,10 @@ popup.addEventListener("click", (event) => {
     ) {
         togglePopup();
     }
+});
+
+// SCROLL TO TOP
+const scrollTop = document.querySelector(".scroll-top");
+scrollTop.addEventListener("click", function () {
+    document.documentElement.scrollTop = 0;
 });
