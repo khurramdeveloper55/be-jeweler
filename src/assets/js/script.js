@@ -1,5 +1,64 @@
 "use strict";
 
+// STICKY NAVIGATION
+window.addEventListener("scroll", function () {
+    if (window.innerWidth > 767) {
+        let navigation = document.querySelector(".navigation");
+        let navHeight = navigation.getBoundingClientRect().height;
+        navigation.classList.toggle("sticky", window.scrollY > navHeight);
+    }
+});
+
+// NAVIGATION TOGGLE
+const btnToggle = document.querySelector(".navbar-toggle");
+const navLinksContainer = document.querySelector(".navbar-links");
+const navCloseBtn = document.querySelector(".navbar-cancel-button");
+const overlay = document.querySelector(".overlay");
+const navIcons = document.querySelector(".navbar-icons-container");
+
+function hideOverlay() {
+    overlay.classList.remove("dark-overlay");
+}
+
+function removeShow() {
+    navLinksContainer.classList.remove("show");
+}
+
+btnToggle.addEventListener("click", function (event) {
+    event.stopPropagation();
+    navLinksContainer.classList.toggle("show");
+    overlay.classList.toggle("dark-overlay");
+});
+document.addEventListener("click", function (event) {
+    if (
+        !navLinksContainer.contains(event.target) &&
+        !btnToggle.contains(event.target)
+    ) {
+        removeShow();
+        hideOverlay();
+    }
+});
+navCloseBtn.addEventListener("click", function () {
+    removeShow();
+    hideOverlay();
+});
+overlay.addEventListener("click", function () {
+    hideOverlay();
+});
+navIcons.addEventListener("click", function () {
+    hideOverlay();
+});
+
+// ACTIVE LINK
+
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a");
+
+navLinks.forEach((link) => {
+    if (link.href.includes(`${activePage}`)) {
+        link.classList.add("active");
+    }
+});
 // COUNTER ANIMATION
 
 function animateCounters(selector, increment) {
