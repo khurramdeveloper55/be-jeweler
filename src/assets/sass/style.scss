@@ -343,6 +343,16 @@ img {
     z-index: 9;
 }
 
+.banner-button {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover a {
+        color: $primary-clr;
+    }
+}
+
 .carousel-caption-box {
     margin-top: -16rem;
     max-width: 175px;
@@ -379,6 +389,14 @@ img {
         width: 100%;
         height: 2px;
         background-color: $primary-clr;
+    }
+    a {
+        color: $primary-clr;
+        text-decoration: none;
+        &:hover {
+            color: $primary-clr;
+            text-decoration: none;
+        }
     }
 }
 
@@ -534,6 +552,15 @@ img {
     margin-bottom: 3rem !important;
     margin-top: 1.5rem !important;
 }
+.exclusive-off-button {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover a {
+        color: $primary-clr;
+    }
+}
 
 /* HOME SURPRISE */
 .surprise-section {
@@ -566,6 +593,20 @@ img {
 }
 .surprise-text-right {
     text-align: right;
+}
+.surprise-offer-button {
+    a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-clr;
+        }
+    }
+}
+
+.surprise-offer-button:hover a {
+    color: $primary-clr;
 }
 
 /* HOME CLIENTS */
@@ -861,6 +902,16 @@ img {
     }
 }
 
+.products-button {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover a {
+        color: $primary-clr;
+    }
+}
+
 /* INSPIRATIONS PAGE */
 
 .inspirations-main-section {
@@ -915,12 +966,17 @@ img {
     height: 50px;
     font-weight: 500;
     margin-top: 3rem;
-
     &:hover {
-        background-color: transparent;
         border: 1px solid $primary-clr;
-        color: $primary-clr;
+        background-color: transparent;
     }
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+.inspirations-button:hover a {
+    color: $primary-clr;
 }
 
 /* SUBSCRIPTION */
@@ -1039,11 +1095,15 @@ img {
 .collection-button {
     background: none;
     border: none;
-    color: $primary-clr;
     margin-top: 2.75rem;
     padding-left: 0;
-    &:hover {
-        text-decoration: underline;
+    a {
+        color: $primary-clr;
+        text-decoration: none;
+        &:hover {
+            color: $primary-clr;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -1076,16 +1136,31 @@ img {
 .contact-tel {
     font-size: 2.75rem;
     font-family: "Bodoni Moda", serif;
-    color: $dark-clr;
+    a {
+        color: $dark-clr;
+        text-decoration: none;
+
+        &:hover {
+            color: $dark-clr;
+            text-decoration: none;
+        }
+    }
 }
 
 .contact-email {
-    color: $paragraph-clr;
     font-family: "Bodoni Moda", serif;
     font-size: 1.8rem;
+    a {
+        color: $paragraph-clr;
+        text-decoration: none;
+        &:hover {
+            color: $paragraph-clr;
+            text-decoration: none;
+        }
+    }
 }
 
-.contact-btn {
+.contact-button {
     width: 165px;
     height: 45px;
     background: none;
@@ -1094,8 +1169,15 @@ img {
     margin-top: 1.6rem;
     font-weight: 500;
     transition: all 0.2s;
+
+    a {
+        text-decoration: none;
+        color: $primary-clr;
+    }
     &:hover {
         background-color: $primary-clr;
+    }
+    &:hover a {
         color: #fff;
     }
 }
@@ -1342,6 +1424,15 @@ footer {
 /* COPYRIGHT */
 .copyright-section {
     margin-bottom: 1rem;
+}
+.copyright-button {
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+    &:hover a {
+        color: $primary-clr;
+    }
 }
 
 .scroll-top {
