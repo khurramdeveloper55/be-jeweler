@@ -143,7 +143,7 @@ observerHome.observe(targetHomeSection);
 // FOOTER GALLLERY POPUP
 const galleryImages = Array.from(document.querySelectorAll(".gallery-image"));
 const popup = document.querySelector(".gallery-popup");
-const closeBtn = document.querySelector(".popup-close__svg");
+const closeBtn = document.querySelector(".popup-close-svg");
 const imageIndexElement = document.querySelector(".index");
 const leftArrowElement = document.querySelector(".popup-left");
 const rightArrowElement = document.querySelector(".popup-right");

@@ -713,7 +713,7 @@ img {
     color: #fff;
     height: 30px;
     font-family: "Jost", sans-serif;
-    line-height: 25px;
+    line-height: 28px;
     opacity: 0;
     font-size: 12px;
     border-radius: 3px;
@@ -741,7 +741,7 @@ img {
     color: #fff;
     height: 30px;
     font-family: "Jost", sans-serif;
-    line-height: 25px;
+    line-height: 28px;
     opacity: 0;
     font-size: 12px;
     border-radius: 3px;
@@ -1183,20 +1183,20 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9;
+    z-index: 50;
     overflow: hidden;
     cursor: zoom-out;
+}
 
-    &__arrows {
-        opacity: 0;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        padding: 10px;
-        border: none;
-        background: transparent;
-        cursor: pointer;
-    }
+.gallery-popup-arrows {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
 
 .gallery-popup.active {
@@ -1210,17 +1210,17 @@ img {
     margin: 0 auto;
     justify-content: flex-end;
     cursor: zoom-out;
+}
 
-    &__svg {
-        opacity: 0;
-        cursor: zoom-out;
-        margin-bottom: 7.5px;
-        &:hover path {
-            fill: $primary-clr;
-        }
-        &:focus {
-            margin-bottom: 5px;
-        }
+.popup-close-svg {
+    opacity: 0;
+    cursor: zoom-out;
+    margin-bottom: 7.5px;
+    &:hover path {
+        fill: $primary-clr;
+    }
+    &:focus {
+        margin-bottom: 5px;
     }
 }
 
@@ -1277,15 +1277,15 @@ img {
     height: 100%;
     object-fit: contain;
     opacity: 0;
-    z-index: 20;
+    z-index: 40;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
-.gallery-popup.active .popup-close__svg,
+.gallery-popup.active .popup-close-svg,
 .gallery-popup.active .index,
 .gallery-popup.active .large-image,
-.gallery-popup.active .gallery-popup__arrows {
+.gallery-popup.active .gallery-popup-arrows {
     opacity: 1;
 }
 
