@@ -1,0 +1,52 @@
+<!-- HEADER -->
+{{ fileInclude 'src/assets/partials/header.html' title='BeJewelry'
+description='' }}
+<main id="main">
+    <!-- NAVIGATION -->
+    {{ fileInclude 'src/assets/partials/navbar.html' }}
+    <!-- MAIN HEADING -->
+    <section class="main-section">
+        <h1 class="main-section-heading">My account</h1>
+        <div class="find-link text-center">
+            <a href="index.html">Home</a>
+            <span>&nbsp; &nbsp; > &nbsp; &nbsp; My account</span>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="login-account-box">
+                    <h2 class="login-login login-account-login">Login</h2>
+                    <input
+                        type="text"
+                        class="login-input login-account-input"
+                        placeholder="Username or email address *"
+                    />
+                    <div class="d-flex position-relative">
+                        <input
+                            type="password"
+                            class="login-input login-account-input"
+                            placeholder="Password *"
+                            id="password"
+                        />
+                        <img
+                            class="input-eye-icon"
+                            src="assets/img/eye-7-svgrepo-com.svg"
+                            alt=""
+                            id="eyeicon"
+                        />
+                    </div>
+                    <button class="login-button">
+                        <a href="#">Login</a>
+                    </button>
+                    <div class="text-center pt-2">
+                        <a class="login-lost" href="find.html"
+                            >Lost your password?</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+{{ fileInclude 'src/assets/partials/footer.html' }}

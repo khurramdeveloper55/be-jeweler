@@ -11,6 +11,15 @@
         height: 600px;
         overflow: hidden;
     }
+    .product-preview {
+        max-height: 650px !important;
+    }
+    .preview-info-container {
+        max-height: 650px !important;
+    }
+    .login-box {
+        right: 5%;
+    }
 }
 
 @media only screen and (max-width: 2000px) {
@@ -23,6 +32,17 @@
     .exclusive-images {
         height: 600px;
         overflow: hidden;
+    }
+}
+@media (max-width: 2000px) and (min-width: 1450px) {
+    .product-preview {
+        max-height: 600px !important;
+    }
+    .preview-info-container {
+        max-height: 600px !important;
+    }
+    .login-box {
+        right: 6%;
     }
 }
 @media only screen and (max-width: 1550px) {
@@ -121,6 +141,9 @@
     .carousel-caption-box {
         margin-top: 0;
     }
+    .filter-toggle {
+        max-width: 40%;
+    }
 }
 @media only screen and (max-width: 991px) {
     .navbar-links.show {
@@ -132,6 +155,10 @@
     }
     .carousel-caption {
         margin-right: -80px !important;
+    }
+    .login-box {
+        top: 15%;
+        right: 17%;
     }
     .md-none {
         display: none;
@@ -167,6 +194,12 @@
     }
     .exclusive-section {
         margin-bottom: 38rem;
+    }
+    .product-preview {
+        max-height: 340px !important;
+    }
+    .preview-info-container {
+        max-height: 340px !important;
     }
 }
 @media only screen and (max-width: 960px) {
@@ -296,6 +329,9 @@
             background-color: $primary-clr;
         }
     }
+    .preview-carousel-inner {
+        height: 100% !important;
+    }
     .exclusive-categories {
         margin-bottom: 36rem;
     }
@@ -361,6 +397,20 @@
         font-size: 1.5rem;
     }
 
+    .product-preview {
+        overflow-y: scroll;
+        width: 95% !important;
+        max-height: 95% !important;
+    }
+    .preview-info-container {
+        overflow-y: visible !important;
+        max-height: 100%;
+    }
+    .preview-close-button {
+        position: fixed;
+        right: 125px;
+        top: 25px;
+    }
     .products-wrapper {
         padding: 0 1rem !important;
     }
@@ -466,6 +516,24 @@
     .md-pe {
         padding-right: 0 !important;
     }
+    .filter-heading {
+        font-size: 1.5rem;
+    }
+    .product-find-link-xl {
+        display: block !important;
+        text-align: center;
+    }
+    .product-find-link {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .preview-close-button {
+        position: fixed;
+        right: 80px;
+        top: 25px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -473,6 +541,17 @@
     .popup-close,
     .index {
         width: 90%;
+    }
+    .preview-close-button {
+        position: fixed;
+        right: 30px;
+        top: 25px;
+    }
+    .lost-account-box {
+        width: 70%;
+    }
+    .filter-toggle {
+        max-width: 50%;
     }
 }
 
@@ -540,6 +619,23 @@
     }
     .surprise-offside {
         width: 100% !important;
+    }
+    .preview-options {
+        font-size: 1rem;
+        padding-right: 0.5rem;
+    }
+    .preview-options-select {
+        width: 67%;
+    }
+    .preview-options-material {
+        width: 100%;
+    }
+    .filter-toggle {
+        max-width: 65%;
+    }
+    .product-details-container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 }
 

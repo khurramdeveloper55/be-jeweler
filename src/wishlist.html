@@ -1,0 +1,26 @@
+<!-- HEADER -->
+{{ fileInclude 'src/assets/partials/header.html' title='BeJewelry'
+description='' }}
+<main id="main">
+    <!-- NAVIGATION -->
+    {{ fileInclude 'src/assets/partials/navbar.html' }}
+    <!-- MAIN HEADING -->
+    <section class="main-section">
+        <h1 class="main-section-heading">Wishlist</h1>
+        <div class="find-link text-center">
+            <a href="index.html">Home</a>
+            <span>&nbsp; &nbsp; > &nbsp; &nbsp; Wishlist</span>
+        </div>
+        <div class="wishlist-box">
+            <h2 class="wishlist-heading">Your wishlist is empty</h2>
+            <div class="text-center mt-3">
+                <button class="wishlist-button">
+                    <a href="product.html">Go to shop</a>
+                </button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+{{ fileInclude 'src/assets/partials/footer.html' }}

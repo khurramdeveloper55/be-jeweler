@@ -207,22 +207,161 @@
                             d="M19.51,18.1v2.31h-13V18.1c0-2.37,2.92-4.3,6.51-4.3S19.51,15.73,19.51,18.1Z"
                         ></path>
                     </svg>
+                    <div class="login-box">
+                        <button class="login-close-button">
+                            <svg
+                                width="20px"
+                                height="20px"
+                                viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg"
+                                stroke-width="3"
+                                fill="none"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <line
+                                        x1="8.06"
+                                        y1="8.06"
+                                        x2="55.41"
+                                        y2="55.94"
+                                    ></line>
+                                    <line
+                                        x1="55.94"
+                                        y1="8.06"
+                                        x2="8.59"
+                                        y2="55.94"
+                                    ></line>
+                                </g>
+                            </svg>
+                        </button>
+                        <h2 class="login-login">Login</h2>
+                        <div class="login-username">
+                            <input
+                                class="login-input login-user-icon"
+                                type="text"
+                                placeholder="Username or email *"
+                            />
+                        </div>
+                        <div class="login-password">
+                            <input
+                                class="login-input login-lock-icon"
+                                type="password"
+                                placeholder="Password *"
+                            />
+                        </div>
+                        <div class="login-remember">
+                            <input type="checkbox" />
+                            <span class="login-remember">Remember me</span>
+                        </div>
+                        <button class="login-button">
+                            <a href="#">Login</a>
+                        </button>
+                        <div class="text-center pt-2">
+                            <a class="login-lost" href="find.html"
+                                >Lost your password?</a
+                            >
+                        </div>
+                    </div>
                 </div>
                 <div class="navbar-wish-container">
-                    <svg
-                        class="navbar-icons-svg"
-                        width="26"
-                        viewBox="0 0 26 26"
-                        aria-label="wishlist icon"
-                    >
-                        <path
-                            class="path"
-                            d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"
-                        ></path>
-                    </svg>
+                    <a href="wishlist.html">
+                        <svg
+                            class="navbar-icons-svg"
+                            width="26"
+                            viewBox="0 0 26 26"
+                            aria-label="wishlist icon"
+                        >
+                            <path
+                                class="path"
+                                d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"
+                            ></path>
+                        </svg>
+                    </a>
                     <span class="navbar-badge">0</span>
                 </div>
                 <div class="navbar-store-container d-flex align-items-center">
+                    <div class="cart-collection">
+                        <button class="cart-close-button">
+                            <svg
+                                width="20px"
+                                height="20px"
+                                viewBox="0 0 64 64"
+                                xmlns="http://www.w3.org/2000/svg"
+                                stroke-width="3"
+                                fill="none"
+                            >
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g
+                                    id="SVGRepo_tracerCarrier"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                ></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <line
+                                        x1="8.06"
+                                        y1="8.06"
+                                        x2="55.41"
+                                        y2="55.94"
+                                    ></line>
+                                    <line
+                                        x1="55.94"
+                                        y1="8.06"
+                                        x2="8.59"
+                                        y2="55.94"
+                                    ></line>
+                                </g>
+                            </svg>
+                        </button>
+                        <div class="cart-collection-header">
+                            <svg
+                                width="30"
+                                viewBox="0 0 26 26"
+                                aria-label="cart icon"
+                            >
+                                <polygon
+                                    class="path"
+                                    points="20.4 20.4 5.6 20.4 6.83 10.53 19.17 10.53 20.4 20.4"
+                                ></polygon>
+                                <path
+                                    class="path"
+                                    d="M9.3,10.53V9.3a3.7,3.7,0,1,1,7.4,0v1.23"
+                                ></path>
+                            </svg>
+                            <div class="cart-collection-heading">Cart</div>
+                        </div>
+                        <div class="cart-collect">
+                            <svg
+                                width="64"
+                                viewBox="0 0 26 26"
+                                aria-label="cart icon"
+                            >
+                                <polygon
+                                    class="path"
+                                    points="20.4 20.4 5.6 20.4 6.83 10.53 19.17 10.53 20.4 20.4"
+                                ></polygon>
+                                <path
+                                    class="path"
+                                    d="M9.3,10.53V9.3a3.7,3.7,0,1,1,7.4,0v1.23"
+                                ></path>
+                            </svg>
+                            <p>Your cart is currently empty.</p>
+                        </div>
+                        <div class="cart-incomes">
+                            <div class="cart-subtotal">
+                                <p>Subtotal:</p>
+                                <span>$0.00</span>
+                            </div>
+                            <div class="cart-total">
+                                <p>Total:</p>
+                                <span>$0.00</span>
+                            </div>
+                        </div>
+                    </div>
                     <div class="navbar-store">
                         <svg
                             class="navbar-icons-svg"
@@ -247,5 +386,56 @@
         </div>
     </div>
 </nav>
+
+<!-- LOGIN FIXED -->
+<div class="login-fixed-box">
+    <button class="login-close-button fixed-close-button">
+        <svg
+            width="20px"
+            height="20px"
+            viewBox="0 0 64 64"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke-width="3"
+            fill="none"
+        >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+                <line x1="8.06" y1="8.06" x2="55.41" y2="55.94"></line>
+                <line x1="55.94" y1="8.06" x2="8.59" y2="55.94"></line>
+            </g>
+        </svg>
+    </button>
+    <h2 class="login-login fixed-login-heading">Login</h2>
+    <div class="login-username px-3">
+        <input
+            class="login-input login-user-icon"
+            type="text"
+            placeholder="Username or email *"
+        />
+    </div>
+    <div class="login-password px-3">
+        <input
+            class="login-input login-lock-icon"
+            type="password"
+            placeholder="Password *"
+        />
+    </div>
+    <div class="login-remember px-3">
+        <input type="checkbox" />
+        <span class="login-remember">Remember me</span>
+    </div>
+    <button class="login-button">
+        <a href="#">Login</a>
+    </button>
+    <div class="text-center pt-2">
+        <a class="login-lost" href="find.html">Lost your password?</a>
+    </div>
+</div>
+
 <!-- OVERLAY -->
 <div class="overlay"></div>

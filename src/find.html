@@ -1,0 +1,29 @@
+<!-- HEADER -->
+{{ fileInclude 'src/assets/partials/header.html' title='BeJewelry'
+description='' }}
+<main id="main">
+    <!-- NAVIGATION -->
+    {{ fileInclude 'src/assets/partials/navbar.html' }}
+    <!-- MAIN HEADING -->
+    <section class="main-section">
+        <h1 class="main-section-heading">My account</h1>
+        <div class="find-link text-center">
+            <a href="index.html">Home</a>
+            <span>&nbsp; &nbsp; > &nbsp; &nbsp; My account</span>
+        </div>
+        <div class="lost-account-box">
+            <p class="lost-account-description text-center">
+                Lost your password? Please enter your username or email address.
+                You will receive a link to create a new password via email.
+            </p>
+            <h6 class="lost-account-heading pt-3 text-center">
+                Username or email
+            </h6>
+            <input class="lost-account-input" type="text" />
+            <button class="lost-account-button mt-2">Reset password</button>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+{{ fileInclude 'src/assets/partials/footer.html' }}
