@@ -320,13 +320,12 @@ createSteppers("stepper-container", 1, 100, 1);
 
 // ADD TO WISHLIST
 const productWishBtn = document.querySelectorAll(".product-wish-button");
-const productWishIcon = document.querySelectorAll(".product-wish-icon"); // Added a dot before 'product-wish-icon' to indicate it's a class
+const productWishIcon = document.querySelectorAll(".product-wish-icon");
 const addToWishlist = document.querySelectorAll(".add-to-wishlist");
 
 productWishBtn.forEach((btn, index) => {
     btn.addEventListener("click", function () {
-        // Use index to select the corresponding elements in the NodeLists
-        productWishIcon[index].classList.toggle("hide"); // Use toggle to switch between active and inactive states
+        productWishIcon[index].classList.toggle("hide");
         addToWishlist[index].classList.toggle("active");
         btn.classList.toggle("active");
     });
@@ -345,7 +344,7 @@ productZoomButton?.addEventListener("click", function () {
 });
 
 productImageButton?.addEventListener("click", function () {
-    jewelryImage.style.transform = "translateX(0)"; // Reset the translation
+    jewelryImage.style.transform = "translateX(0)";
     productZoomImage.style.transform = "translateX(0%)";
     jewelryImage.style.transition = "all 0.5s";
     productZoomImage.style.transition = "all 0.5s";
