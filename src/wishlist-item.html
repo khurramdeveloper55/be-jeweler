@@ -1,0 +1,226 @@
+<!-- HEADER -->
+{{ fileInclude 'src/assets/partials/header.html' title='BeJewelry'
+description='' }}
+<main id="main">
+    <!-- NAVIGATION -->
+    {{ fileInclude 'src/assets/partials/navbar.html' }}
+    <!-- MAIN HEADING -->
+    <section class="main-section">
+        <h1 class="main-section-heading">Wishlist</h1>
+        <div class="find-link text-center">
+            <a href="index.html">Home</a>
+            <span>&nbsp; &nbsp; > &nbsp; &nbsp; Wishlist</span>
+        </div>
+        <div class="wishlist-box">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="wishlist-wish-item">
+                            <div class="product-icons">
+                                <button class="product-link-button">
+                                    <svg
+                                        class="product-icons-svg"
+                                        width="24"
+                                        viewBox="0 0 26 26"
+                                    >
+                                        <defs>
+                                            <style>
+                                                .path {
+                                                    stroke-miterlimit: 10;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <g>
+                                            <path
+                                                d="M10.17,8.76l2.12-2.12a5,5,0,0,1,7.07,0h0a5,5,0,0,1,0,7.07l-2.12,2.12"
+                                                class="path"
+                                            ></path>
+                                            <path
+                                                d="M15.83,17.24l-2.12,2.12a5,5,0,0,1-7.07,0h0a5,5,0,0,1,0-7.07l2.12-2.12"
+                                                class="path"
+                                            ></path>
+                                            <line
+                                                x1="10.17"
+                                                y1="15.83"
+                                                x2="15.83"
+                                                y2="10.17"
+                                                class="path"
+                                            ></line>
+                                        </g>
+                                    </svg>
+                                    <span class="product-tooltip"
+                                        >View product</span
+                                    >
+                                </button>
+                                <button
+                                    class="product-wish-button position-relative"
+                                >
+                                    <svg
+                                        class="product-icons-svg product-wish-icon"
+                                        width="24"
+                                        viewBox="0 0 26 26"
+                                    >
+                                        <path
+                                            class="path"
+                                            d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"
+                                        ></path>
+                                    </svg>
+                                    <svg
+                                        class="product-icons-svg add-to-wishlist"
+                                        width="24"
+                                        viewBox="0 0 26 26"
+                                    >
+                                        <path
+                                            class="path"
+                                            d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"
+                                        ></path>
+                                    </svg>
+                                    <span class="wishlist-tooltip"
+                                        >Add to wishlist</span
+                                    >
+                                </button>
+                                <button
+                                    class="product-preview-button position-relative"
+                                >
+                                    <svg
+                                        class="product-icons-svg"
+                                        width="24"
+                                        viewBox="0 0 26 26"
+                                    >
+                                        <defs>
+                                            <style>
+                                                .path {
+                                                    fill: none;
+                                                    stroke-miterlimit: 10;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <line
+                                            x1="7"
+                                            y1="7"
+                                            x2="11.29"
+                                            y2="11.29"
+                                            class="path"
+                                        ></line>
+                                        <line
+                                            x1="14.62"
+                                            y1="14.62"
+                                            x2="18.91"
+                                            y2="18.91"
+                                            class="path"
+                                        ></line>
+                                        <polyline
+                                            points="7 15.57 7 19 10.43 19"
+                                            class="path"
+                                        ></polyline>
+                                        <polyline
+                                            points="15.57 19 19 19 19 15.57"
+                                            class="path"
+                                        ></polyline>
+                                        <polyline
+                                            points="10.43 7 7 7 7 10.43"
+                                            class="path"
+                                        ></polyline>
+                                        <polyline
+                                            points="19 10.43 19 7 15.57 7"
+                                            class="path"
+                                        ></polyline>
+                                        <line
+                                            x1="14.71"
+                                            y1="11.29"
+                                            x2="19"
+                                            y2="7"
+                                            class="path"
+                                        ></line>
+                                        <line
+                                            x1="7"
+                                            y1="19"
+                                            x2="11.29"
+                                            y2="14.71"
+                                            class="path"
+                                        ></line>
+                                    </svg>
+                                    <span class="preview-tooltip">Preview</span>
+                                </button>
+                            </div>
+                            <img
+                                class="w-100"
+                                src="assets/img/jeweler2-product-pic8-800x800.webp"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="wishlist-item-heading">
+                            <a href="#">Head Crown</a>
+                        </h1>
+                        <h2 class="wishlist-item-price">
+                            $1,480.00 – $2,000.00
+                        </h2>
+                        <p class="wishlist-item-description">
+                            Dolor maecenas magnis et arcu rhoncus bibendum
+                            euismod venenatis tincidunt. Nisi finibus maximus
+                            pellentesque turpis vestibulum tortor fames sem
+                            vitae luctus imperdiet. Rhoncus vulputate vel
+                            egestas suscipit porttitor montes sagittis ultrices
+                            netus nunc. Luctus iaculis ac vestibulum eros proin
+                            egestas.
+                        </p>
+                        <div class="d-inline wishlist-item-wrapper">
+                            <span class="preview-more wishlist-item-more"
+                                >SKU: BE/JW2/0001</span
+                            >
+                            &nbsp;
+                            <div class="product-categories d-inline">
+                                Categories:
+                                <a
+                                    class="preview-link product-link wishlist-item-link"
+                                    >Earnings,</a
+                                >
+                                <a
+                                    class="preview-link product-link wishlist-item-link"
+                                    >Watches</a
+                                >
+                            </div>
+                            &nbsp;
+                            <p class="d-inline wishlist-tag">
+                                Tags:
+                                <a class="preview-tag product-related-tag"
+                                    >earnings</a
+                                >
+                                <a class="preview-tag product-related-tag"
+                                    >gold</a
+                                >
+                                <a class="preview-tag product-related-tag"
+                                    >pearls</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-md-3 mt-md-0 mt-5 d-flex justify-content-center align-items-center flex-column"
+                    >
+                        <button class="btns wishlist-option-button">
+                            <a href="#">Select options</a>
+                        </button>
+                        <div class="wishlist-wish-btn mt-4">
+                            <svg
+                                class="product-icons-svg"
+                                width="24"
+                                viewBox="0 0 26 26"
+                            >
+                                <path
+                                    class="path"
+                                    d="M16.7,6a3.78,3.78,0,0,0-2.3.8A5.26,5.26,0,0,0,13,8.5a5,5,0,0,0-1.4-1.6A3.52,3.52,0,0,0,9.3,6a4.33,4.33,0,0,0-4.2,4.6c0,2.8,2.3,4.7,5.7,7.7.6.5,1.2,1.1,1.9,1.7H13a.37.37,0,0,0,.3-.1c.7-.6,1.3-1.2,1.9-1.7,3.4-2.9,5.7-4.8,5.7-7.7A4.3,4.3,0,0,0,16.7,6Z"
+                                ></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+{{ fileInclude 'src/assets/partials/footer.html' }}

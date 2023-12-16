@@ -10,6 +10,7 @@
     .exclusive-images {
         height: 600px;
         overflow: hidden;
+        justify-content: center;
     }
     .product-preview {
         max-height: 650px !important;
@@ -43,6 +44,11 @@
     }
     .login-box {
         right: 6%;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .surprise-box-wrapper {
+        max-width: 1400px;
     }
 }
 @media only screen and (max-width: 1550px) {
@@ -522,9 +528,56 @@
     .product-find-link-xl {
         display: block !important;
         text-align: center;
+        padding-bottom: 4rem;
     }
     .product-find-link {
         display: none;
+    }
+    .cart-type-row-border {
+        display: none;
+    }
+    .cart-product-row {
+        font-size: 1rem;
+    }
+    .cart-type-d-none {
+        display: block;
+    }
+    .cart-product-name {
+        display: flex;
+        justify-content: space-between;
+    }
+    .cart-pricing-detail,
+    .cart-quantity,
+    .cart-totals {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .cart-remove-box {
+        justify-content: center;
+        padding: 12px 0px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .cart-product-image {
+        display: none;
+    }
+    .update-cart-btn {
+        width: 100%;
+    }
+    .cart-box,
+    .wishlist-box {
+        margin-top: 6rem;
+    }
+    .login-box {
+        display: none !important;
+    }
+    .filter-bar-box {
+        flex-direction: column-reverse;
+    }
+    .filter-price-button {
+        margin-top: 10px;
     }
 }
 
@@ -552,6 +605,9 @@
     }
     .filter-toggle {
         max-width: 50%;
+    }
+    .range-slider input {
+        width: 104%;
     }
 }
 
@@ -637,6 +693,23 @@
         padding-left: 15px !important;
         padding-right: 15px !important;
     }
+    .coupon-input {
+        margin-bottom: 22px;
+    }
+    .apply-coupon-btn,
+    .coupon-input {
+        width: 100%;
+    }
+    .coupon-toggle input {
+        width: 250px;
+    }
+    .coupon-toggle button {
+        width: 250px;
+    }
+    .coupon-box p {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 400px) {
@@ -659,5 +732,15 @@
     .exclusive-section,
     .exclusive-categories {
         margin-bottom: 30rem;
+    }
+    .step-container .step {
+        width: 30px;
+        height: 30px;
+    }
+    .cart-items-contain {
+        width: 325px;
+    }
+    .cart-items-contain .item-price {
+        font-size: 1rem;
     }
 }

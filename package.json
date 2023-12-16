@@ -35,9 +35,14 @@
         "gulp-uglify": "^3.0.2"
     },
     "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@mui/material": "^5.14.20",
+        "@mui/styled-engine-sc": "^6.0.0-alpha.7",
         "a11y": "^0.5.1",
         "gulp-google-webfonts": "^2.1.0",
         "jquery": "^3.6.0",
-        "popper.js": "^1.16.1"
+        "popper.js": "^1.16.1",
+        "styled-components": "^6.1.1"
     }
 }

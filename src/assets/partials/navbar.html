@@ -1,7 +1,7 @@
 <!-- NAVIGATION -->
 <nav class="navigation">
     <div class="container-fluid">
-        <div class="row navigation-row">
+        <div class="row navigation-row position-relative">
             <div class="col-md-5 navbar-toggle-container d-flex">
                 <button class="navbar-toggle">
                     <img
@@ -156,45 +156,49 @@
             </div>
             <div class="col-md-5 navbar-icons-container">
                 <div class="navbar-product-icon">
-                    <svg
-                        viewBox="0 0 26 26"
-                        class="navbar-icons-svg"
-                        width="26"
-                        aria-hidden="true"
-                    >
-                        <g id="Layer_4" data-name="Layer 4">
-                            <rect
-                                x="15"
-                                y="5"
-                                width="6"
-                                height="6"
-                                class="path"
-                            ></rect>
-                            <rect
-                                x="5"
-                                y="5"
-                                width="6"
-                                height="6"
-                                class="path"
-                            ></rect>
-                            <rect
-                                x="5"
-                                y="15"
-                                width="6"
-                                height="6"
-                                class="path"
-                            ></rect>
-                            <rect
-                                x="15"
-                                y="15"
-                                width="6"
-                                height="6"
-                                class="path"
-                            ></rect>
-                        </g>
-                    </svg>
+                    <a href="product.html">
+                        <svg
+                            viewBox="0 0 26 26"
+                            class="navbar-icons-svg"
+                            width="26"
+                            aria-hidden="true"
+                        >
+                            <g id="Layer_4" data-name="Layer 4">
+                                <rect
+                                    x="15"
+                                    y="5"
+                                    width="6"
+                                    height="6"
+                                    class="path"
+                                ></rect>
+                                <rect
+                                    x="5"
+                                    y="5"
+                                    width="6"
+                                    height="6"
+                                    class="path"
+                                ></rect>
+                                <rect
+                                    x="5"
+                                    y="15"
+                                    width="6"
+                                    height="6"
+                                    class="path"
+                                ></rect>
+                                <rect
+                                    x="15"
+                                    y="15"
+                                    width="6"
+                                    height="6"
+                                    class="path"
+                                ></rect>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
-                <div class="navbar-user-container">
+                <div
+                    class="navbar-user-container navbar-user-button-container navbar-user-mobile"
+                >
                     <svg
                         class="navbar-icons-svg"
                         width="26"
@@ -334,6 +338,107 @@
                             </svg>
                             <div class="cart-collection-heading">Cart</div>
                         </div>
+                        <div class="cart-collection-items-box d-none">
+                            <div class="cart-items-contain my-2">
+                                <div class="container cart-pad">
+                                    <div class="row">
+                                        <div
+                                            class="col-4 d-flex align-items-center"
+                                        >
+                                            <img
+                                                class="w-100"
+                                                src="assets/img/jeweler2-product-pic8-800x800.webp"
+                                                alt=""
+                                            />
+                                        </div>
+                                        <div class="col-5 border-right">
+                                            <h6 class="cart-clr">
+                                                Fancy earrings
+                                            </h6>
+                                            <h6>
+                                                <span class="cart-item-title"
+                                                    >Material:</span
+                                                ><span>Gold</span>
+                                            </h6>
+                                            <h6>
+                                                <span class="cart-item-title"
+                                                    >Gift wrapping:</span
+                                                ><span>No</span>
+                                            </h6>
+                                            <h6>
+                                                <span class="cart-item-title"
+                                                    >Price:</span
+                                                ><span class="cart-clr"
+                                                    >$25.00</span
+                                                >
+                                            </h6>
+                                        </div>
+                                        <div
+                                            class="col-3 d-flex align-items-center"
+                                        >
+                                            <h5 class="item-price">$25.00</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="container items-count">
+                                    <div class="row">
+                                        <div
+                                            class="col-7 d-flex justify-content-center"
+                                        >
+                                            <div
+                                                id="stepper-container"
+                                                class="position-relative me-2"
+                                            >
+                                                <div class="stepper-container">
+                                                    <button
+                                                        class="preview-user-info-button preview-user-info-button-decrement preview-numbers"
+                                                        id="decrement"
+                                                    >
+                                                        <img
+                                                            class="w-75 preview-user-icon"
+                                                            src="assets/img/minus-svgrepo-com.svg"
+                                                            alt=""
+                                                        />
+                                                    </button>
+                                                    <input
+                                                        class="preview-user-info-input"
+                                                        type="number"
+                                                        value="1"
+                                                        min="1"
+                                                        max="100"
+                                                        step="1"
+                                                        id="preview-input"
+                                                        readonly
+                                                    />
+                                                    <button
+                                                        class="preview-user-info-button preview-user-info-button-increment preview-numbers"
+                                                        id="increment"
+                                                    >
+                                                        <img
+                                                            class="w-75 preview-user-icon"
+                                                            src="assets/img/plus-large-svgrepo-com.svg"
+                                                            alt=""
+                                                        />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="col-5 d-flex align-items-center justify-content-center"
+                                        >
+                                            <img
+                                                class="item-recycle"
+                                                src="assets/img/recycle-bin-svgrepo-com.svg"
+                                                alt=""
+                                            />
+                                            <button class="item-remove-btn">
+                                                Remove
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="cart-collect">
                             <svg
                                 width="64"
@@ -364,7 +469,7 @@
                     </div>
                     <div class="navbar-store">
                         <svg
-                            class="navbar-icons-svg"
+                            class="navbar-icons-svg navbar-cart-icon"
                             width="26"
                             viewBox="0 0 26 26"
                             aria-label="cart icon"

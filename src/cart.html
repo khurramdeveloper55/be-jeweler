@@ -1,0 +1,196 @@
+<!-- HEADER -->
+{{ fileInclude 'src/assets/partials/header.html' title='BeJewelry'
+description='' }}
+<main id="main">
+    <!-- NAVIGATION -->
+    {{ fileInclude 'src/assets/partials/navbar.html' }}
+    <!-- MAIN HEADING -->
+    <section class="main-section">
+        <h1 class="main-section-heading">Cart</h1>
+        <div class="find-link text-center">
+            <a href="index.html">Home</a>
+            <span>&nbsp; &nbsp; > &nbsp; &nbsp; Cart</span>
+        </div>
+        <div class="cart-box">
+            <div class="step-container d-flex justify-content-center mb-5">
+                <div class="step-1 d-flex align-items-center">
+                    <span class="step active">1</span> &nbsp; &nbsp;
+                    <span class="step-name">Cart</span> &nbsp; &nbsp
+                    <span>></span> &nbsp; &nbsp;
+                </div>
+                <div class="step-2 d-flex align-items-center">
+                    <span class="step">2</span> &nbsp; &nbsp;
+                    <span class="step-name">Checkout</span> &nbsp; &nbsp
+                    <span>></span> &nbsp; &nbsp;
+                </div>
+                <div class="step-3 d-flex align-items-center">
+                    <span class="step">3</span> &nbsp; &nbsp;
+                    <span class="step-name">Order</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="container pb-1 mb-3 cart-type-row-border">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-3">
+                                    <p class="cart-type-row">PRODUCT</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="cart-type-row">PRICE</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="cart-type-row">QUANTITY</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="cart-type-row">SUBTOTAL</p>
+                                </div>
+                                <div class="col-md-1"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-2 d-flex align-items-center">
+                                    <img
+                                        class="cart-product-image"
+                                        src="assets/img/jeweler2-product-pic3-800x800.webp"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="col-md-3">
+                                    <h6 class="cart-product-name">
+                                        <span
+                                            class="cart-type-row cart-type-d-none"
+                                            >Product:</span
+                                        >
+                                        <span> Gold necklace</span>
+                                    </h6>
+                                    <div
+                                        class="cart-type-box cart-type-border pt-0"
+                                    >
+                                        <h6 class="cart-type">Material:</h6>
+                                        <h6 class="cart-type-type">Platinum</h6>
+                                    </div>
+                                    <div class="cart-type-box cart-type-border">
+                                        <h6 class="cart-type">Gem:</h6>
+                                        <h6 class="cart-type-type">Emerald</h6>
+                                    </div>
+                                    <div class="cart-type-box cart-type-border">
+                                        <h6 class="cart-type">Size:</h6>
+                                        <h6 class="cart-type-type">6</h6>
+                                    </div>
+                                    <div class="cart-type-box">
+                                        <h6 class="cart-type">
+                                            Gift wrapping:
+                                        </h6>
+                                        <h6 class="cart-type-type">Yes</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 cart-pricing-detail">
+                                    <span class="cart-type-row cart-type-d-none"
+                                        >Price:</span
+                                    >
+                                    <p class="mb-0">$0.00</p>
+                                </div>
+                                <div class="col-md-2 d-flex cart-quantity">
+                                    <span class="cart-type-row cart-type-d-none"
+                                        >Quantity</span
+                                    >
+                                    <div class="position-relative">
+                                        <button
+                                            class="preview-user-info-button preview-user-info-button-decrement preview-numbers"
+                                            id="decrement"
+                                        >
+                                            <img
+                                                class="w-75 preview-user-icon"
+                                                src="assets/img/minus-svgrepo-com.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                        <input
+                                            class="preview-user-info-input"
+                                            type="number"
+                                            value="1"
+                                            min="1"
+                                            max="100"
+                                            step="1"
+                                            id="preview-input"
+                                            readonly
+                                        />
+                                        <button
+                                            class="preview-user-info-button preview-user-info-button-increment preview-numbers"
+                                            id="increment"
+                                        >
+                                            <img
+                                                class="w-75 preview-user-icon"
+                                                src="assets/img/plus-large-svgrepo-com.svg"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 cart-totals">
+                                    <span class="cart-type-row cart-type-d-none"
+                                        >Total:</span
+                                    >
+                                    <p class="mb-0">$0.00</p>
+                                </div>
+                                <div class="col-md-1 cart-remove-box">
+                                    <img
+                                        class="cart-remove-cart"
+                                        src="assets/img/close-black-svgrepo-com.svg"
+                                        alt=""
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-3 pt-2">
+                            <div class="row">
+                                <div class="col-md-8 mb-4 mb-md-0">
+                                    <input
+                                        class="coupon-input"
+                                        type="text"
+                                        placeholder="COUPON CODE"
+                                    />
+                                    <button class="apply-coupon-btn">
+                                        Apply coupon
+                                    </button>
+                                </div>
+                                <div
+                                    class="col-md-4 d-flex justify-content-end align-items-center"
+                                >
+                                    <button class="update-cart-btn">
+                                        Update cart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-lg-0 mt-5">
+                        <div class="cart-total-card">
+                            <h3 class="cart-total-heading">Cart totals</h3>
+                            <p class="cart-subtotal-container">
+                                <span class="subtotal">Subtotal</span>
+                                <span class="price">$0.00</span>
+                            </p>
+                            <p class="cart-total-container">
+                                <span class="total">Total</span>
+                                <span class="price">$0.00</span>
+                            </p>
+                            <button class="btns cart-proceed-btn">
+                                Proceed to checkout
+                            </button>
+                            <div class="shopping-link-container">
+                                <a href="">Continue shopping</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+{{ fileInclude 'src/assets/partials/footer.html' }}
