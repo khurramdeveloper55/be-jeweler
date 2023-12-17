@@ -241,7 +241,7 @@
 
     .navbar-icons-container {
         position: fixed;
-        top: 89%;
+        top: calc(100% - 58px);
         left: 0;
         justify-content: space-between;
         background-color: $body-clr;
@@ -709,6 +709,15 @@
     .coupon-box p {
         display: flex;
         flex-direction: column;
+    }
+    .preview-close-button {
+        right: 15px;
+        top: 15px;
+        z-index: 999;
+    }
+    .product-preview {
+        width: 100% !important;
+        max-height: 100% !important;
     }
 }
 
