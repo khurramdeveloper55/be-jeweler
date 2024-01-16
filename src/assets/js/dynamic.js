@@ -756,4 +756,94 @@ jQuery(document).ready(function () {
             console.error("Error fetching data:", error);
         },
     });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveCollection = data.data.attributes.exclusiveCollection;
+            $(".exclusive-collection").text(exclusiveCollection);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveDiscountOff =
+                data.data.attributes.exclusiveDiscountOff;
+            $(".exclusive-off-heading").text(exclusiveDiscountOff);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveDiscountDesc =
+                data.data.attributes.exclusiveDiscountDesc;
+            $(".exclusive-off-description").text(exclusiveDiscountDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveBtnName =
+                data.data.attributes.exclusiveDiscountBtnName;
+            var exclusiveBtnLink =
+                data.data.attributes.exclusiveDiscountBtnLink;
+            $(".exclusive-off-button").text(exclusiveBtnName);
+            $(".exclusive-off-button").attr("href", exclusiveBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=exclusiveCollectionImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveCollectionImg =
+                data.data.attributes.exclusiveCollectionImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var exclusiveImage = baseUrl + exclusiveCollectionImg;
+            $(".exclusive-collection-img").attr("src", exclusiveImage);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=exclusiveDiscountImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveDiscountImg =
+                data.data.attributes.exclusiveDiscountImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var exclusiveImage = baseUrl + exclusiveDiscountImg;
+            $(".exclusive-discount-img").attr("src", exclusiveImage);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
 });
