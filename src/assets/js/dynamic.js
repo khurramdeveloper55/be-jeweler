@@ -133,6 +133,7 @@ jQuery(document).ready(function () {
 
     var homeURL = "http://localhost:1337/api/home?populate=*";
 
+    ///////// HOME META //////////////////
     $.ajax({
         url: homeURL,
         method: "GET",
@@ -179,6 +180,7 @@ jQuery(document).ready(function () {
         },
     });
 
+    //////////// HOME BANNER ///////////////
     $.ajax({
         url: homeURL,
         method: "GET",
@@ -424,6 +426,7 @@ jQuery(document).ready(function () {
         },
     });
 
+    ///////////////////// HOME PERCENT COUNTER /////////////
     $.ajax({
         url: homeURL,
         method: "GET",
@@ -520,6 +523,7 @@ jQuery(document).ready(function () {
         },
     });
 
+    ////////// HOME EXCLUSIVE ////////////
     $.ajax({
         url: homeURL,
         method: "GET",
@@ -757,6 +761,7 @@ jQuery(document).ready(function () {
         },
     });
 
+    /////// EXCLUSIVE BANNERS ///////////
     $.ajax({
         url: homeURL,
         method: "GET",
@@ -841,6 +846,256 @@ jQuery(document).ready(function () {
             var baseUrl = "http://localhost:1337";
             var exclusiveImage = baseUrl + exclusiveDiscountImg;
             $(".exclusive-discount-img").attr("src", exclusiveImage);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    ////////// SURPRISE ///////////
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseTitle = data.data.attributes.surpriseTitle;
+            $(".surprise-title").text(surpriseTitle);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseSubtitle = data.data.attributes.surpriseSubtitle;
+            $(".surprise-heading").text(surpriseSubtitle);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseBtnName = data.data.attributes.surpriseBtnName;
+            var surpriseBtnLink = data.data.attributes.surpriseBtnLink;
+            $(".surprise-offer-button").text(surpriseBtnName);
+            $(".surprise-offer-button").attr("href", surpriseBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=surpriseGift",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseGift =
+                data.data.attributes.surpriseGift.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var surpriseGiftImg = baseUrl + surpriseGift;
+            $(".surprise-gift-img").attr("src", surpriseGiftImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseCount = surpriseOptionsArray[0].surpriseCount;
+
+            $(".surprise-count-1").text(surpriseCount);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseCount = surpriseOptionsArray[1].surpriseCount;
+
+            $(".surprise-count-2").text(surpriseCount);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseCount = surpriseOptionsArray[2].surpriseCount;
+
+            $(".surprise-count-3").text(surpriseCount);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseCount = surpriseOptionsArray[3].surpriseCount;
+
+            $(".surprise-count-4").text(surpriseCount);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseHeading = surpriseOptionsArray[0].surpriseHeading;
+
+            $(".surprise-heading-1").text(surpriseHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseHeading = surpriseOptionsArray[1].surpriseHeading;
+
+            $(".surprise-heading-2").text(surpriseHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseHeading = surpriseOptionsArray[2].surpriseHeading;
+
+            $(".surprise-heading-3").text(surpriseHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseHeading = surpriseOptionsArray[3].surpriseHeading;
+
+            $(".surprise-heading-4").text(surpriseHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseSubHeading = surpriseOptionsArray[0].surpriseSubHeading;
+
+            $(".surprise-subheading-1").text(surpriseSubHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseSubHeading = surpriseOptionsArray[1].surpriseSubHeading;
+
+            $(".surprise-subheading-2").text(surpriseSubHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseSubHeading = surpriseOptionsArray[2].surpriseSubHeading;
+
+            $(".surprise-subheading-3").text(surpriseSubHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseOptionsArray = data.data.attributes.surpriseOptions;
+
+            var surpriseSubHeading = surpriseOptionsArray[3].surpriseSubHeading;
+
+            $(".surprise-subheading-4").text(surpriseSubHeading);
         },
         error: function (error) {
             console.error("Error fetching data:", error);
