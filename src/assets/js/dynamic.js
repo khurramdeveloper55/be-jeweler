@@ -1204,4 +1204,52 @@ jQuery(document).ready(function () {
             console.error("Error fetching data:", error);
         },
     });
+
+    /////// HOME SUBSCRIBE ///////////
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var subscribeTitle =
+                data.data.attributes.homeSubscribe.subscribeTitle;
+
+            $(".subscribe-title").text(subscribeTitle);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var subscribeDescription =
+                data.data.attributes.homeSubscribe.subscribeDesc;
+
+            $(".subscribe-description").text(subscribeDescription);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var subscribeBtnName =
+                data.data.attributes.homeSubscribe.subscribeBtnName;
+            var subscribeBtnLink =
+                data.data.attributes.homeSubscribe.subscribeBtnLink;
+            $(".subscription-button").text(subscribeBtnName);
+            $(".subscription-button").attr("href", subscribeBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
 });
