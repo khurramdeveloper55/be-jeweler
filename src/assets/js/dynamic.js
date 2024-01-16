@@ -1101,4 +1101,107 @@ jQuery(document).ready(function () {
             console.error("Error fetching data:", error);
         },
     });
+
+    ///// HOME CLIENTS /////////
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=homeClients,homeClients.homeClientImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var homeClientArray = data.data.attributes.homeClients;
+            var homeClientCombine =
+                homeClientArray[0].homeClientImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var homeClientImg = baseUrl + homeClientCombine;
+            $(".home-client-img-1").attr("src", homeClientImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=homeClients,homeClients.homeClientImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var homeClientArray = data.data.attributes.homeClients;
+            var homeClientCombine =
+                homeClientArray[1].homeClientImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var homeClientImg = baseUrl + homeClientCombine;
+            $(".home-client-img-2").attr("src", homeClientImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=homeClients,homeClients.homeClientImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var homeClientArray = data.data.attributes.homeClients;
+            var homeClientCombine =
+                homeClientArray[2].homeClientImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var homeClientImg = baseUrl + homeClientCombine;
+            $(".home-client-img-3").attr("src", homeClientImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=homeClients,homeClients.homeClientImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var homeClientArray = data.data.attributes.homeClients;
+            var homeClientCombine =
+                homeClientArray[3].homeClientImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var homeClientImg = baseUrl + homeClientCombine;
+            $(".home-client-img-4").attr("src", homeClientImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=homeClients,homeClients.homeClientImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var homeClientArray = data.data.attributes.homeClients;
+            var homeClientCombine =
+                homeClientArray[4].homeClientImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var homeClientImg = baseUrl + homeClientCombine;
+            $(".home-client-img-5").attr("src", homeClientImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/home?populate=homeClients,homeClients.homeClientImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var homeClientArray = data.data.attributes.homeClients;
+            var homeClientCombine =
+                homeClientArray[5].homeClientImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var homeClientImg = baseUrl + homeClientCombine;
+            $(".home-client-img-6").attr("src", homeClientImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
 });
