@@ -2310,4 +2310,212 @@ jQuery(document).ready(function () {
             console.error("Error fetching data:", error);
         },
     });
+
+    /////// CONTACT PAGE //////////
+
+    var contactURL = "http://localhost:1337/api/contact?populate=*";
+
+    $.ajax({
+        url: contactURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactMainTitle = data.data.attributes.contactMainTitle;
+
+            $(".contact-main-title").text(contactMainTitle);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactMainHeading = data.data.attributes.contactMainHeading;
+
+            $(".contact-main-heading").text(contactMainHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactAddress = data.data.attributes.contactAddress;
+
+            $(".contact-address").text(contactAddress);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactLocation = data.data.attributes.contactLocation;
+
+            $(".contact-location").text(contactLocation);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactBtnName = data.data.attributes.contactBtnName;
+            var contactBtnLink = data.data.attributes.contactBtnLink;
+            $(".contact-btn").text(contactBtnName);
+            $(".contact-btn").attr("href", contactBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactUs = data.data.attributes.contactUs;
+            $(".contact-us-heading").text(contactUs);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactNumber = data.data.attributes.contactNumber;
+            $(".contact-phone").text(contactNumber);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactMail = data.data.attributes.contactMail;
+            $(".contact-mail").text(contactMail);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactHourHeading = data.data.attributes.contactHourHeading;
+            $(".contact-hour-heading").text(contactHourHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactDays1 = data.data.attributes.contactDays1;
+            $(".contact-days-1").text(contactDays1);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactDays2 = data.data.attributes.contactDays2;
+            $(".contact-days-2").text(contactDays2);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactTime1 = data.data.attributes.contactTime1;
+            $(".contact-time-1").text(contactTime1);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactTime2 = data.data.attributes.contactTime2;
+            $(".contact-time-2").text(contactTime2);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactQuestion = data.data.attributes.contactQuestion;
+            $(".qa-heading").text(contactQuestion);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactImg =
+                data.data.attributes.contactImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var contactImage = baseUrl + contactImg;
+            $(".qa-image").attr("src", contactImage);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
 });
