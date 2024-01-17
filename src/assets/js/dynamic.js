@@ -1,6 +1,108 @@
 jQuery(document).ready(function () {
     //////////// FOOTER STARTS ////////////////
 
+    $.ajax({
+        url: "http://localhost:1337/api/setting?populate=Footer,Footer.FooterImg,Footer.FooterImg.FooterImage",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerImgArray = data.data.attributes.Footer.FooterImg;
+            var footerImgCombine =
+                footerImgArray[0].FooterImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var footerImg = baseUrl + footerImgCombine;
+            $(".footer-image-1").attr("src", footerImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/setting?populate=Footer,Footer.FooterImg,Footer.FooterImg.FooterImage",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerImgArray = data.data.attributes.Footer.FooterImg;
+            var footerImgCombine =
+                footerImgArray[1].FooterImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var footerImg = baseUrl + footerImgCombine;
+            $(".footer-image-2").attr("src", footerImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/setting?populate=Footer,Footer.FooterImg,Footer.FooterImg.FooterImage",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerImgArray = data.data.attributes.Footer.FooterImg;
+            var footerImgCombine =
+                footerImgArray[2].FooterImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var footerImg = baseUrl + footerImgCombine;
+            $(".footer-image-3").attr("src", footerImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/setting?populate=Footer,Footer.FooterImg,Footer.FooterImg.FooterImage",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerImgArray = data.data.attributes.Footer.FooterImg;
+            var footerImgCombine =
+                footerImgArray[3].FooterImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var footerImg = baseUrl + footerImgCombine;
+            $(".footer-image-4").attr("src", footerImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/setting?populate=Footer,Footer.FooterImg,Footer.FooterImg.FooterImage",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerImgArray = data.data.attributes.Footer.FooterImg;
+            var footerImgCombine =
+                footerImgArray[4].FooterImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var footerImg = baseUrl + footerImgCombine;
+            $(".footer-image-5").attr("src", footerImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/setting?populate=Footer,Footer.FooterImg,Footer.FooterImg.FooterImage",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerImgArray = data.data.attributes.Footer.FooterImg;
+            var footerImgCombine =
+                footerImgArray[5].FooterImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var footerImg = baseUrl + footerImgCombine;
+            $(".footer-image-6").attr("src", footerImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
     var apiUrl = "http://localhost:1337/api/setting?populate=*";
     jQuery.ajax({
         url: apiUrl,
@@ -124,6 +226,99 @@ jQuery(document).ready(function () {
         },
         error: function (error) {
             console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerHeading = data.data.attributes.Footer.Footer4.Heading;
+            $(".footer-help").text(footerHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerPhone = data.data.attributes.Footer.Footer4.PhoneNumber1;
+            $(".footer-phone-1").text(footerPhone);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerPhone = data.data.attributes.Footer.Footer4.PhoneNumber2;
+            $(".footer-phone-2").text(footerPhone);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerTimeHeading =
+                data.data.attributes.Footer.Footer4.TimeHeading1;
+            $(".footer-time-heading-1").text(footerTimeHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerTimeHeading =
+                data.data.attributes.Footer.Footer4.TimeHeading2;
+            $(".footer-time-heading-2").text(footerTimeHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerTime = data.data.attributes.Footer.Footer4.Time1;
+            $(".footer-time-1").text(footerTime);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerTime = data.data.attributes.Footer.Footer4.Time2;
+            $(".footer-time-2").text(footerTime);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
         },
     });
 
@@ -1205,14 +1400,181 @@ jQuery(document).ready(function () {
         },
     });
 
-    /////// HOME SUBSCRIBE ///////////
+    ///////// INFO SECTION /////////
+
+    var infoURL = "http://localhost:1337/api/info?populate=*";
+
     $.ajax({
-        url: homeURL,
+        url: infoURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoSince = data.data.attributes.infoComponent.infoSince;
+
+            $(".info-since").text(infoSince);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: infoURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoDate = data.data.attributes.infoComponent.infoDate;
+
+            $(".info-date").text(infoDate);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: infoURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoDesc = data.data.attributes.infoComponent.infoDesc;
+
+            $(".info-description").text(infoDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/info?populate=infoComponent,infoComponent.infoImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoCompImg =
+                data.data.attributes.infoComponent.infoImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var infoImg = baseUrl + infoCompImg;
+            $(".info-img").attr("src", infoImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/info?populate=infoComponent,infoComponent.infoCounterComp",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoCounterArray =
+                data.data.attributes.infoComponent.infoCounterComp;
+
+            var infoCounter = infoCounterArray[0].infoCount;
+
+            $(".info-counter-1").text(infoCounter);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/info?populate=infoComponent,infoComponent.infoCounterComp",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoCounterArray =
+                data.data.attributes.infoComponent.infoCounterComp;
+
+            var infoCounter = infoCounterArray[1].infoCount;
+
+            $(".info-counter-2").text(infoCounter);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/info?populate=infoComponent,infoComponent.infoCounterComp",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoCounterArray =
+                data.data.attributes.infoComponent.infoCounterComp;
+
+            var infoCounter = infoCounterArray[2].infoCount;
+
+            $(".info-counter-3").text(infoCounter);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/info?populate=infoComponent,infoComponent.infoCounterComp",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoCounterDescArray =
+                data.data.attributes.infoComponent.infoCounterComp;
+
+            var infoCounterDesc = infoCounterDescArray[0].infoCountDesc;
+
+            $(".info-counter-desc-1").text(infoCounterDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/info?populate=infoComponent,infoComponent.infoCounterComp",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoCounterDescArray =
+                data.data.attributes.infoComponent.infoCounterComp;
+
+            var infoCounterDesc = infoCounterDescArray[1].infoCountDesc;
+
+            $(".info-counter-desc-2").text(infoCounterDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/info?populate=infoComponent,infoComponent.infoCounterComp",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var infoCounterDescArray =
+                data.data.attributes.infoComponent.infoCounterComp;
+
+            var infoCounterDesc = infoCounterDescArray[2].infoCountDesc;
+
+            $(".info-counter-desc-3").text(infoCounterDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    /////// SUBSCRIBE ///////////
+
+    var subURL = "http://localhost:1337/api/subscribe?populate=*";
+
+    $.ajax({
+        url: subURL,
         method: "GET",
         dataType: "json",
         success: function (data) {
             var subscribeTitle =
-                data.data.attributes.homeSubscribe.subscribeTitle;
+                data.data.attributes.subscribeComp.subscribeTitle;
 
             $(".subscribe-title").text(subscribeTitle);
         },
@@ -1222,12 +1584,12 @@ jQuery(document).ready(function () {
     });
 
     $.ajax({
-        url: homeURL,
+        url: subURL,
         method: "GET",
         dataType: "json",
         success: function (data) {
             var subscribeDescription =
-                data.data.attributes.homeSubscribe.subscribeDesc;
+                data.data.attributes.subscribeComp.subscribeDesc;
 
             $(".subscribe-description").text(subscribeDescription);
         },
@@ -1237,12 +1599,12 @@ jQuery(document).ready(function () {
     });
 
     $.ajax({
-        url: homeURL,
+        url: subURL,
         type: "GET",
         dataType: "json",
         success: function (data) {
             var subscribeBtnName =
-                data.data.attributes.homeSubscribe.subscribeBtnName;
+                data.data.attributes.subscribeComp.subscribeBtnName;
             var subscribeBtnLink =
                 data.data.attributes.homeSubscribe.subscribeBtnLink;
             $(".subscription-button").text(subscribeBtnName);
