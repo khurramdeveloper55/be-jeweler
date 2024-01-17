@@ -1196,8 +1196,34 @@ jQuery(document).ready(function () {
         method: "GET",
         dataType: "json",
         success: function (data) {
-            var exclusiveCollection = data.data.attributes.exclusiveCollection;
-            $(".exclusive-collection").text(exclusiveCollection);
+            var exclusiveCollection = data.data.attributes.exclusiveCollection1;
+            $(".exclusive-collection-1").text(exclusiveCollection);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveCollection = data.data.attributes.exclusiveCollection2;
+            $(".exclusive-collection-2").text(exclusiveCollection);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveCollection = data.data.attributes.exclusiveCollection3;
+            $(".exclusive-collection-3").text(exclusiveCollection);
         },
         error: function (error) {
             console.error("Error fetching copyright:", error);
@@ -1210,8 +1236,22 @@ jQuery(document).ready(function () {
         dataType: "json",
         success: function (data) {
             var exclusiveDiscountOff =
-                data.data.attributes.exclusiveDiscountOff;
-            $(".exclusive-off-heading").text(exclusiveDiscountOff);
+                data.data.attributes.exclusiveDiscountOff1;
+            $(".exclusive-off-heading-1").text(exclusiveDiscountOff);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveDiscountOff =
+                data.data.attributes.exclusiveDiscountOff2;
+            $(".exclusive-off-heading-2").text(exclusiveDiscountOff);
         },
         error: function (error) {
             console.error("Error fetching copyright:", error);
@@ -1224,8 +1264,36 @@ jQuery(document).ready(function () {
         dataType: "json",
         success: function (data) {
             var exclusiveDiscountDesc =
-                data.data.attributes.exclusiveDiscountDesc;
-            $(".exclusive-off-description").text(exclusiveDiscountDesc);
+                data.data.attributes.exclusiveDiscountDesc1;
+            $(".exclusive-off-description-1").text(exclusiveDiscountDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveDiscountDesc =
+                data.data.attributes.exclusiveDiscountDesc2;
+            $(".exclusive-off-description-2").text(exclusiveDiscountDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var exclusiveDiscountDesc =
+                data.data.attributes.exclusiveDiscountDesc3;
+            $(".exclusive-off-description-3").text(exclusiveDiscountDesc);
         },
         error: function (error) {
             console.error("Error fetching copyright:", error);
@@ -1300,8 +1368,21 @@ jQuery(document).ready(function () {
         method: "GET",
         dataType: "json",
         success: function (data) {
-            var surpriseSubtitle = data.data.attributes.surpriseSubtitle;
-            $(".surprise-heading").text(surpriseSubtitle);
+            var surpriseSubtitle = data.data.attributes.surpriseSubtitle1;
+            $(".surprise-main-1").text(surpriseSubtitle);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: homeURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var surpriseSubtitle = data.data.attributes.surpriseSubtitle2;
+            $(".surprise-main-2").text(surpriseSubtitle);
         },
         error: function (error) {
             console.error("Error fetching copyright:", error);
@@ -1822,10 +1903,40 @@ jQuery(document).ready(function () {
         method: "GET",
         dataType: "json",
         success: function (data) {
-            var subscribeDescription =
-                data.data.attributes.subscribeComp.subscribeDesc;
+            var subscribeHeading =
+                data.data.attributes.subscribeComp.subscribeHeading1;
 
-            $(".subscribe-description").text(subscribeDescription);
+            $(".subscribe-heading-1").text(subscribeHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: subURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var subscribeHeading =
+                data.data.attributes.subscribeComp.subscribeHeading2;
+
+            $(".subscribe-heading-2").text(subscribeHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: subURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var subscribeSubHeading =
+                data.data.attributes.subscribeComp.subscribeSubHeading;
+
+            $(".subscription-sub-heading").text(subscribeSubHeading);
         },
         error: function (error) {
             console.error("Error fetching data:", error);
@@ -2495,8 +2606,21 @@ jQuery(document).ready(function () {
         type: "GET",
         dataType: "json",
         success: function (data) {
-            var contactQuestion = data.data.attributes.contactQuestion;
-            $(".qa-heading").text(contactQuestion);
+            var contactQuestion = data.data.attributes.contactQuestion1;
+            $(".qa-heading-1").text(contactQuestion);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: contactURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var contactQuestion = data.data.attributes.contactQuestion2;
+            $(".qa-heading-2").text(contactQuestion);
         },
         error: function (error) {
             console.error("Error fetching copyright:", error);
