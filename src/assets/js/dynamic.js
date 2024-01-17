@@ -230,6 +230,240 @@ jQuery(document).ready(function () {
     });
 
     $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerHeading1 =
+                data.data.attributes.Footer.Footer2.FooterHeading1;
+            $(".footer2-heading-1").text(footerHeading1);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerHeading1 =
+                data.data.attributes.Footer.Footer2.FooterHeading2;
+            $(".footer2-heading-2").text(footerHeading1);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer2Links;
+            var footerLinkName = footerLinkNameArray[0].FooterLinkName;
+            var footerLink = footerLinkNameArray[0].FooterLink;
+            $(".footer2-link-1").text(footerLinkName);
+            $(".footer2-link-1").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer2Links;
+            var footerLinkName = footerLinkNameArray[1].FooterLinkName;
+            var footerLink = footerLinkNameArray[1].FooterLink;
+            $(".footer2-link-2").text(footerLinkName);
+            $(".footer2-link-2").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer2Links;
+            var footerLinkName = footerLinkNameArray[2].FooterLinkName;
+            var footerLink = footerLinkNameArray[2].FooterLink;
+            $(".footer2-link-3").text(footerLinkName);
+            $(".footer2-link-3").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer2Links;
+            var footerLinkName = footerLinkNameArray[3].FooterLinkName;
+            var footerLink = footerLinkNameArray[3].FooterLink;
+            $(".footer2-link-4").text(footerLinkName);
+            $(".footer2-link-4").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer2Links;
+            var footerLinkName = footerLinkNameArray[4].FooterLinkName;
+            var footerLink = footerLinkNameArray[4].FooterLink;
+            $(".footer2-link-5").text(footerLinkName);
+            $(".footer2-link-5").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer2Links;
+            var footerLinkName = footerLinkNameArray[5].FooterLinkName;
+            var footerLink = footerLinkNameArray[5].FooterLink;
+            $(".footer2-link-6").text(footerLinkName);
+            $(".footer2-link-6").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer3Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer3Links;
+            var footerLinkName = footerLinkNameArray[0].FooterLinkName;
+            var footerLink = footerLinkNameArray[0].FooterLink;
+            $(".footer3-link-1").text(footerLinkName);
+            $(".footer3-link-1").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer3Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer3Links;
+            var footerLinkName = footerLinkNameArray[1].FooterLinkName;
+            var footerLink = footerLinkNameArray[1].FooterLink;
+            $(".footer3-link-2").text(footerLinkName);
+            $(".footer3-link-2").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer3Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer3Links;
+            var footerLinkName = footerLinkNameArray[2].FooterLinkName;
+            var footerLink = footerLinkNameArray[2].FooterLink;
+            $(".footer3-link-3").text(footerLinkName);
+            $(".footer3-link-3").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer3Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer3Links;
+            var footerLinkName = footerLinkNameArray[3].FooterLinkName;
+            var footerLink = footerLinkNameArray[3].FooterLink;
+            $(".footer3-link-4").text(footerLinkName);
+            $(".footer3-link-4").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer3Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer3Links;
+            var footerLinkName = footerLinkNameArray[4].FooterLinkName;
+            var footerLink = footerLinkNameArray[4].FooterLink;
+            $(".footer3-link-5").text(footerLinkName);
+            $(".footer3-link-5").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer2Links",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerLinkNameArray = data.data.attributes.Footer.Footer2Links;
+            var footerLinkName = footerLinkNameArray[6].FooterLinkName;
+            var footerLink = footerLinkNameArray[6].FooterLink;
+            $(".footer2-link-7").text(footerLinkName);
+            $(".footer2-link-7").attr("href", footerLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer3",
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var footerHeading1 =
+                data.data.attributes.Footer.Footer3.FooterHeading1;
+            $(".footer3-heading").text(footerHeading1);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
         url: " http://localhost:1337/api/setting?populate=Footer,Footer.Footer4",
         type: "GET",
         dataType: "json",
@@ -1612,6 +1846,303 @@ jQuery(document).ready(function () {
         },
         error: function (error) {
             console.error("Error fetching copyright:", error);
+        },
+    });
+
+    //////////// INSPIRATIONS /////////////
+
+    var inspireURL = "http://localhost:1337/api/inspiration?populate=*";
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var mainTitle = data.data.attributes.MainTitle;
+
+            $(".inspiration-main-title").text(mainTitle);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var mainHeading = data.data.attributes.MainHeading;
+
+            $(".inspiration-main-heading").text(mainHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationDesc = data.data.attributes.inspirationDesc;
+
+            $(".inspiration-description").text(inspirationDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationSign = data.data.attributes.inspirationSign;
+
+            $(".inspirations-signature").text(inspirationSign);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationQuote =
+                data.data.attributes.inspirationQuote.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var inspirationQuoteImg = baseUrl + inspirationQuote;
+            $(".inspirations-quote").attr("src", inspirationQuoteImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationSign =
+                data.data.attributes.inspirationSignImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var inspirationSignImg = baseUrl + inspirationSign;
+            $(".inspiration-sign-img").attr("src", inspirationSignImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationMain =
+                data.data.attributes.inspirationMainImg.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var inspirationMainImg = baseUrl + inspirationMain;
+            $(".inspiration-main-img").attr("src", inspirationMainImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationMainHeading =
+                data.data.attributes.inspiration1.inspireMainHeading;
+
+            $(".inspire1-heading").text(inspirationMainHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationMainHeading =
+                data.data.attributes.inspiration2.inspireMainHeading;
+
+            $(".inspire2-heading").text(inspirationMainHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationMainHeading =
+                data.data.attributes.inspiration3.inspireMainHeading;
+
+            $(".inspire3-heading").text(inspirationMainHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationDesc = data.data.attributes.inspiration1.inspireDesc;
+
+            $(".inspire1-desc").text(inspirationDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationDesc = data.data.attributes.inspiration2.inspireDesc;
+
+            $(".inspire2-desc").text(inspirationDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationDesc = data.data.attributes.inspiration3.inspireDesc;
+
+            $(".inspire3-desc").text(inspirationDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspireBtnName =
+                data.data.attributes.inspiration1.inspireBtnName;
+            var inspireBtnLink =
+                data.data.attributes.inspiration1.inspireBtnLink;
+            $(".inspirations-button").text(inspireBtnName);
+            $(".inspirations-button").attr("href", inspireBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspireBtnName =
+                data.data.attributes.inspiration2.inspireBtnName;
+            var inspireBtnLink =
+                data.data.attributes.inspiration2.inspireBtnLink;
+            $(".inspirations-button").text(inspireBtnName);
+            $(".inspirations-button").attr("href", inspireBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: inspireURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspireBtnName =
+                data.data.attributes.inspiration3.inspireBtnName;
+            var inspireBtnLink =
+                data.data.attributes.inspiration3.inspireBtnLink;
+            $(".inspirations-button").text(inspireBtnName);
+            $(".inspirations-button").attr("href", inspireBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/inspiration?populate=inspiration1.inspireImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationImg =
+                data.data.attributes.inspiration1.inspireImg.data.attributes
+                    .url;
+            var baseUrl = "http://localhost:1337";
+            var inspirationImage = baseUrl + inspirationImg;
+            $(".inspiration-img-1").attr("src", inspirationImage);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/inspiration?populate=inspiration2.inspireImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationImg =
+                data.data.attributes.inspiration2.inspireImg.data.attributes
+                    .url;
+            var baseUrl = "http://localhost:1337";
+            var inspirationImage = baseUrl + inspirationImg;
+            $(".inspiration-img-2").attr("src", inspirationImage);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: "http://localhost:1337/api/inspiration?populate=inspiration3.inspireImg",
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var inspirationImg =
+                data.data.attributes.inspiration3.inspireImg.data.attributes
+                    .url;
+            var baseUrl = "http://localhost:1337";
+            var inspirationImage = baseUrl + inspirationImg;
+            $(".inspiration-img-3").attr("src", inspirationImage);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
         },
     });
 });
