@@ -2145,4 +2145,169 @@ jQuery(document).ready(function () {
             console.error("Error fetching data:", error);
         },
     });
+
+    ///////// ABOUT PAGE /////////////
+
+    var aboutURL = "http://localhost:1337/api/about?populate=*";
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutMainTitle = data.data.attributes.aboutMainTitle;
+
+            $(".about-main-title").text(aboutMainTitle);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutMainHeading = data.data.attributes.aboutMainHeading;
+
+            $(".about-main-heading").text(aboutMainHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutHeading = data.data.attributes.aboutHeading;
+
+            $(".about-heading").text(aboutHeading);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var abouteQuote =
+                data.data.attributes.aboutQuote.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var aboutQuoteImg = baseUrl + abouteQuote;
+            $(".about-quote-img").attr("src", aboutQuoteImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutDesc = data.data.attributes.aboutDesc;
+
+            $(".about-description").text(aboutDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutBtnName = data.data.attributes.aboutBtnName;
+            var aboutBtnLink = data.data.attributes.aboutBtnLink;
+            $(".about-button").text(aboutBtnName);
+            $(".about-button").attr("href", aboutBtnLink);
+        },
+        error: function (error) {
+            console.error("Error fetching copyright:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutImage =
+                data.data.attributes.aboutImage.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var aboutImg = baseUrl + aboutImage;
+            $(".about-image").attr("src", aboutImg);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutDescription = data.data.attributes.aboutDescription1;
+
+            $(".about-description-1").text(aboutDescription);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutDescription = data.data.attributes.aboutDescription2;
+
+            $(".about-description-2").text(aboutDescription);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutDescription = data.data.attributes.aboutDescription3;
+
+            $(".about-description-3").text(aboutDescription);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: aboutURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var aboutSignature =
+                data.data.attributes.aboutSignature.data.attributes.url;
+            var baseUrl = "http://localhost:1337";
+            var aboutSign = baseUrl + aboutSignature;
+            $(".about-signature").attr("src", aboutSign);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
 });
