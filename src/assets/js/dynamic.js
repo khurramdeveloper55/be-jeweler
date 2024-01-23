@@ -2642,4 +2642,98 @@ jQuery(document).ready(function () {
             console.error("Error fetching data:", error);
         },
     });
+
+    /////// PRODUCTS PAGE /////////
+
+    var productURL = "http://localhost:1337/api/product?populate=*";
+
+    $.ajax({
+        url: productURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var productTag = data.data.attributes.tagTitle;
+
+            $(".product-tag").text(productTag);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: productURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var productCategory = data.data.attributes.categoryTitle;
+
+            $(".product-category").text(productCategory);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: productURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var productType = data.data.attributes.productType;
+
+            $(".product-type").text(productType);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: productURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var productNameArray = data.data.attributes.product;
+
+            var productName = productNameArray[0].productName;
+
+            $(".queen-bracelet").text(productName);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: productURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var productPriceArray = data.data.attributes.product;
+
+            var productPrice = productPriceArray[0].productPrice;
+
+            $(".bracelet-price").text(productPrice);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
+
+    $.ajax({
+        url: productURL,
+        method: "GET",
+        dataType: "json",
+        success: function (data) {
+            var productDescArray = data.data.attributes.product;
+
+            var productDesc = productDescArray[0].productDesc;
+
+            $(".bracelet-desc").text(productDesc);
+        },
+        error: function (error) {
+            console.error("Error fetching data:", error);
+        },
+    });
 });
